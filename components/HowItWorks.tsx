@@ -7,8 +7,8 @@ import { useRef } from 'react'
 const steps = [
   {
     number: '01',
-    title: 'Regístrate',
-    description: 'Completa el formulario de prerregistro y únete a la lista de espera exclusiva',
+    title: 'Register',
+    description: 'Complete the pre-registration form and join our exclusive waiting list',
     icon: (
       <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -17,8 +17,8 @@ const steps = [
   },
   {
     number: '02',
-    title: 'Recibe tu Taply',
-    description: 'Serás notificado cuando tu tarjeta esté lista. La recibirás directamente en tu domicilio',
+    title: 'Receive your Taply',
+    description: 'You\'ll be notified when your card is ready. You\'ll receive it directly at your home',
     icon: (
       <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
@@ -27,8 +27,8 @@ const steps = [
   },
   {
     number: '03',
-    title: 'Personaliza',
-    description: 'Configura tu perfil digital y añade toda tu información de contacto y redes sociales',
+    title: 'Customize',
+    description: 'Set up your digital profile and add all your contact information and social networks',
     icon: (
       <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
@@ -37,8 +37,8 @@ const steps = [
   },
   {
     number: '04',
-    title: 'Conecta',
-    description: 'Comparte tu información con un simple tap. Networking reinventado',
+    title: 'Connect',
+    description: 'Share your information with a simple tap. Networking reinvented',
     icon: (
       <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -64,10 +64,10 @@ export default function HowItWorks() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            ¿Cómo <span className="text-gradient">funciona</span>?
+            How <span className="text-gradient">it works</span>?
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            En solo 4 pasos estarás listo para comenzar a conectar de una manera totalmente nueva
+            In just 4 steps you&apos;ll be ready to start connecting in a completely new way
           </p>
         </motion.div>
 
@@ -215,7 +215,7 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        {/* CTA adicional */}
+        {/* Additional CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -223,7 +223,7 @@ export default function HowItWorks() {
           className="text-center mt-16"
         >
           <p className="text-gray-400 text-lg">
-            ¿Listo para empezar? <a href="#preregister" className="text-taply-blue hover:text-taply-lime transition-colors duration-300 font-semibold underline">Regístrate ahora</a>
+            Ready to get started? <a href="#preregister" className="text-taply-blue hover:text-taply-lime transition-colors duration-300 font-semibold underline">Register now</a>
           </p>
         </motion.div>
       </div>

@@ -1,179 +1,179 @@
-# Guía de Configuración de MongoDB Atlas para Taply
+# MongoDB Atlas Configuration Guide for Taply
 
-Esta guía te ayudará a configurar MongoDB Atlas paso a paso para la landing page de Taply.
+This guide will help you configure MongoDB Atlas step by step for the Taply landing page.
 
-## 🎯 Pasos para Configurar MongoDB Atlas
+## 🎯 Steps to Configure MongoDB Atlas
 
-### 1. Crear una Cuenta en MongoDB Atlas
+### 1. Create a MongoDB Atlas Account
 
-1. Ve a [https://www.mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas)
-2. Haz clic en "Try Free" o "Start Free"
-3. Regístrate con tu email o cuenta de Google/GitHub
-4. Verifica tu email si es necesario
+1. Go to [https://www.mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas)
+2. Click "Try Free" or "Start Free"
+3. Register with your email or Google/GitHub account
+4. Verify your email if necessary
 
-### 2. Crear un Nuevo Cluster
+### 2. Create a New Cluster
 
-1. Después de iniciar sesión, verás la opción "Build a Database"
-2. Selecciona **"M0 FREE"** (el tier gratuito es perfecto para comenzar)
-3. Elige un proveedor cloud:
-   - **AWS** (recomendado)
+1. After logging in, you'll see the "Build a Database" option
+2. Select **"M0 FREE"** (the free tier is perfect for getting started)
+3. Choose a cloud provider:
+   - **AWS** (recommended)
    - Google Cloud Platform
    - Microsoft Azure
-4. Selecciona la región más cercana a tus usuarios (ej: Europe - Frankfurt para España)
-5. Nombre del cluster: puedes dejarlo como "Cluster0" o cambiarlo a "taply-cluster"
-6. Haz clic en **"Create"**
-7. Espera 3-5 minutos mientras se crea el cluster
+4. Select the region closest to your users (e.g., Europe - Frankfurt for Spain)
+5. Cluster name: you can leave it as "Cluster0" or change it to "taply-cluster"
+6. Click **"Create"**
+7. Wait 3-5 minutes while the cluster is created
 
-### 3. Configurar Seguridad - Usuario de Base de Datos
+### 3. Configure Security - Database User
 
-1. Verás una ventana de "Security Quickstart"
-2. En la sección **"How would you like to authenticate your connection?"**:
-   - Selecciona "Username and Password"
-   - Username: `taply-admin` (o el que prefieras)
-   - Password: Haz clic en "Autogenerate Secure Password" o crea una contraseña segura
-   - **⚠️ IMPORTANTE**: Copia y guarda la contraseña, la necesitarás más adelante
-3. Haz clic en "Create User"
+1. You'll see a "Security Quickstart" window
+2. In the **"How would you like to authenticate your connection?"** section:
+   - Select "Username and Password"
+   - Username: `taply-admin` (or whatever you prefer)
+   - Password: Click "Autogenerate Secure Password" or create a secure password
+   - **⚠️ IMPORTANT**: Copy and save the password, you'll need it later
+3. Click "Create User"
 
-### 4. Configurar Acceso a la Red
+### 4. Configure Network Access
 
-1. En la sección **"Where would you like to connect from?"**:
-   - Durante desarrollo, selecciona "My Local Environment"
-   - Haz clic en "Add My Current IP Address"
-   - O si quieres acceso desde cualquier lugar (para producción en Vercel, etc):
+1. In the **"Where would you like to connect from?"** section:
+   - During development, select "My Local Environment"
+   - Click "Add My Current IP Address"
+   - Or if you want access from anywhere (for production on Vercel, etc):
      - IP Address: `0.0.0.0/0`
      - Description: "Allow all (for development/production)"
-     - **⚠️ Nota**: En producción real, es mejor limitar las IPs específicas
-2. Haz clic en "Finish and Close"
+     - **⚠️ Note**: In real production, it's better to limit specific IPs
+2. Click "Finish and Close"
 
-### 5. Obtener el Connection String
+### 5. Get the Connection String
 
-1. En el Dashboard, haz clic en **"Connect"** en tu cluster
-2. Selecciona **"Drivers"**
-3. Selecciona:
+1. In the Dashboard, click **"Connect"** on your cluster
+2. Select **"Drivers"**
+3. Select:
    - Driver: "Node.js"
    - Version: "5.5 or later"
-4. Copia el connection string que se ve así:
+4. Copy the connection string that looks like this:
    ```
    mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority
    ```
 
-### 6. Configurar el Connection String
+### 6. Configure the Connection String
 
-1. Reemplaza `<username>` con el nombre de usuario que creaste (ej: `taply-admin`)
-2. Reemplaza `<password>` con la contraseña que guardaste
-3. Añade el nombre de la base de datos después del `.net/`:
+1. Replace `<username>` with the username you created (e.g., `taply-admin`)
+2. Replace `<password>` with the password you saved
+3. Add the database name after `.net/`:
    ```
-   mongodb+srv://taply-admin:TU_PASSWORD@cluster0.xxxxx.mongodb.net/taply?retryWrites=true&w=majority
+   mongodb+srv://taply-admin:YOUR_PASSWORD@cluster0.xxxxx.mongodb.net/taply?retryWrites=true&w=majority
    ```
 
-### 7. Crear el archivo .env.local
+### 7. Create the .env.local file
 
-En la raíz de tu proyecto Taply, crea un archivo llamado `.env.local`:
+In the root of your Taply project, create a file called `.env.local`:
 
 ```env
-MONGODB_URI=mongodb+srv://taply-admin:TU_PASSWORD@cluster0.xxxxx.mongodb.net/taply?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://taply-admin:YOUR_PASSWORD@cluster0.xxxxx.mongodb.net/taply?retryWrites=true&w=majority
 MONGODB_DB=taply
 ```
 
-**⚠️ IMPORTANTE**: 
-- NO compartas este archivo
-- NO lo subas a GitHub (ya está en .gitignore)
-- Reemplaza `TU_PASSWORD` con tu contraseña real
+**⚠️ IMPORTANT**:
+- DO NOT share this file
+- DO NOT upload it to GitHub (it's already in .gitignore)
+- Replace `YOUR_PASSWORD` with your real password
 
-### 8. Crear la Base de Datos y Colección (Opcional)
+### 8. Create the Database and Collection (Optional)
 
-MongoDB creará automáticamente la base de datos y colección cuando insertes el primer documento, pero si prefieres crearla manualmente:
+MongoDB will automatically create the database and collection when you insert the first document, but if you prefer to create it manually:
 
-1. En MongoDB Atlas, ve a "Browse Collections"
-2. Haz clic en "Create Database"
+1. In MongoDB Atlas, go to "Browse Collections"
+2. Click "Create Database"
 3. Database name: `taply`
 4. Collection name: `preregisters`
-5. Haz clic en "Create"
+5. Click "Create"
 
-### 9. Verificar la Conexión
+### 9. Verify the Connection
 
-Ejecuta tu aplicación:
+Run your application:
 
 ```bash
 npm run dev
 ```
 
-Visita `http://localhost:3000` y prueba el formulario de prerregistro. Si funciona correctamente, verás un mensaje de éxito.
+Visit `http://localhost:3000` and test the pre-registration form. If it works correctly, you'll see a success message.
 
-Para verificar que los datos se guardaron:
-1. Ve a MongoDB Atlas
-2. Haz clic en "Browse Collections"
-3. Deberías ver la base de datos `taply` y la colección `preregisters` con tus registros
+To verify that the data was saved:
+1. Go to MongoDB Atlas
+2. Click "Browse Collections"
+3. You should see the `taply` database and `preregisters` collection with your records
 
-## 🔍 Estructura de Datos
+## 🔍 Data Structure
 
-Los prerregistros se guardan con esta estructura:
+Pre-registrations are saved with this structure:
 
 ```json
 {
-  "_id": "ObjectId generado automáticamente",
-  "name": "Juan Pérez",
-  "email": "juan@ejemplo.com",
-  "phone": "+34 612 345 678",
+  "_id": "ObjectId automatically generated",
+  "name": "John Smith",
+  "email": "john@example.com",
+  "phone": "+1 555 123 456",
   "createdAt": "2025-10-01T10:30:00.000Z",
   "source": "landing"
 }
 ```
 
-## 📊 Ver los Prerregistros
+## 📊 View Pre-registrations
 
-### Desde MongoDB Atlas:
-1. Ve a "Browse Collections"
-2. Selecciona la base de datos `taply`
-3. Haz clic en la colección `preregisters`
-4. Verás todos los registros con opciones para filtrar, editar o eliminar
+### From MongoDB Atlas:
+1. Go to "Browse Collections"
+2. Select the `taply` database
+3. Click on the `preregisters` collection
+4. You'll see all records with options to filter, edit or delete
 
-### Desde tu aplicación:
-Visita `http://localhost:3000/api/preregister` para ver el total de prerregistros (endpoint GET).
+### From your application:
+Visit `http://localhost:3000/api/preregister` to see the total number of pre-registrations (GET endpoint).
 
-## 🚀 Configuración para Producción (Vercel)
+## 🚀 Production Configuration (Vercel)
 
-Cuando despliegues en Vercel:
+When you deploy to Vercel:
 
-1. Ve a tu proyecto en Vercel
+1. Go to your project in Vercel
 2. Settings → Environment Variables
-3. Añade las variables:
+3. Add the variables:
    - Name: `MONGODB_URI`
-   - Value: tu connection string completo
+   - Value: your complete connection string
    - Name: `MONGODB_DB`
    - Value: `taply`
-4. Redeploy tu aplicación
+4. Redeploy your application
 
-## 🔒 Mejores Prácticas de Seguridad
+## 🔒 Security Best Practices
 
-1. **Nunca compartas tu connection string** - Contiene tu contraseña
-2. **Usa variables de entorno** - Nunca hardcodees las credenciales
-3. **Limita el acceso IP** - En producción, usa IPs específicas
-4. **Cambia las contraseñas regularmente** - Especialmente si se comprometen
-5. **Habilita auditoría** - MongoDB Atlas ofrece logs de actividad
-6. **Usa roles apropiados** - El usuario solo necesita lectura/escritura en la DB taply
+1. **Never share your connection string** - It contains your password
+2. **Use environment variables** - Never hardcode credentials
+3. **Limit IP access** - In production, use specific IPs
+4. **Change passwords regularly** - Especially if compromised
+5. **Enable auditing** - MongoDB Atlas offers activity logs
+6. **Use appropriate roles** - The user only needs read/write access to the taply DB
 
-## ❓ Solución de Problemas
+## ❓ Troubleshooting
 
 ### Error: "MongoServerError: bad auth"
-- Verifica que el usuario y contraseña sean correctos
-- Si la contraseña tiene caracteres especiales, encódelos (usa %XX)
+- Verify that the username and password are correct
+- If the password has special characters, encode them (use %XX)
 
 ### Error: "MongooseServerSelectionError"
-- Verifica que tu IP esté en la lista de IPs permitidas
-- Revisa que el connection string sea correcto
+- Verify that your IP is in the allowed IPs list
+- Check that the connection string is correct
 
 ### Error: "Cannot read property 'db' of null"
-- Asegúrate de que `MONGODB_URI` esté configurado en `.env.local`
-- Reinicia el servidor de desarrollo después de crear `.env.local`
+- Make sure `MONGODB_URI` is configured in `.env.local`
+- Restart the development server after creating `.env.local`
 
-## 📚 Recursos Adicionales
+## 📚 Additional Resources
 
-- [Documentación oficial de MongoDB Atlas](https://docs.atlas.mongodb.com/)
-- [MongoDB University - Cursos gratuitos](https://university.mongodb.com/)
-- [Foro de la comunidad](https://www.mongodb.com/community/forums/)
+- [Official MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
+- [MongoDB University - Free courses](https://university.mongodb.com/)
+- [Community forum](https://www.mongodb.com/community/forums/)
 
 ---
 
-¿Necesitas ayuda? Revisa el README.md principal o contacta al equipo de desarrollo.
+Need help? Check the main README.md or contact the development team.
 

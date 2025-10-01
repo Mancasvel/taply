@@ -1,62 +1,62 @@
-# AVISO LEGAL
+# LEGAL NOTICE
 
-## 1. INFORMACIÓN GENERAL
+## 1. GENERAL INFORMATION
 
-Este sitio web taply.com y la aplicación móvil TAPLY son propiedad de **TAPLY, S.L.** (en adelante, "la empresa"), con domicilio social en [Dirección completa], [Código Postal], [Ciudad], [Provincia], España, y CIF/NIF [Número de identificación fiscal].
+This website taply.com and the TAPLY mobile application are owned by **TAPLY, S.L.** (hereinafter, "the company"), with registered office at [Complete address], [Postal Code], [City], [Province], Spain, and CIF/NIF [Tax identification number].
 
-**Registro mercantil**: Inscrita en el Registro Mercantil de [Ciudad], Tomo [Número], Folio [Número], Sección [Número], Hoja [Número].
+**Commercial registry**: Registered in the Commercial Registry of [City], Volume [Number], Folio [Number], Section [Number], Sheet [Number].
 
-## 2. OBJETO
+## 2. PURPOSE
 
-El presente aviso legal regula el uso del sitio web taply.com y la aplicación móvil TAPLY, que la empresa pone a disposición de los usuarios de Internet.
+This legal notice regulates the use of the website taply.com and the TAPLY mobile application, which the company makes available to Internet users.
 
-## 3. CONDICIONES DE USO
+## 3. CONDITIONS OF USE
 
-### 3.1 Acceso al sitio web:
-El acceso a este sitio web es responsabilidad exclusiva del usuario. El acceso no implica ningún tipo de relación comercial entre TAPLY y el usuario.
+### 3.1 Website access:
+Access to this website is the exclusive responsibility of the user. Access does not imply any commercial relationship between TAPLY and the user.
 
-### 3.2 Uso correcto del sitio web:
-El usuario se compromete a utilizar el sitio web de conformidad con la ley, la moral, las buenas costumbres y el orden público.
+### 3.2 Proper use of the website:
+The user undertakes to use the website in accordance with the law, morality, good customs and public order.
 
-### 3.3 Propiedad intelectual:
-Todo el contenido del sitio web (textos, imágenes, diseños, software, etc.) está protegido por derechos de propiedad intelectual propiedad de TAPLY o sus licenciantes.
+### 3.3 Intellectual property:
+All website content (texts, images, designs, software, etc.) is protected by intellectual property rights owned by TAPLY or its licensors.
 
-## 4. EXCLUSIÓN DE RESPONSABILIDAD
+## 4. DISCLAIMER
 
-### 4.1 Por el contenido:
-TAPLY no se hace responsable de las opiniones expresadas en el sitio web por terceros, ni de la información contenida en páginas web de terceros a las que se pueda acceder mediante enlaces.
+### 4.1 For content:
+TAPLY is not responsible for opinions expressed on the website by third parties, nor for information contained in third-party websites that can be accessed through links.
 
-### 4.2 Por el funcionamiento técnico:
-TAPLY no garantiza la disponibilidad, continuidad ni infalibilidad del funcionamiento del sitio web, y en consecuencia excluye cualquier responsabilidad por daños y perjuicios de toda naturaleza que puedan deberse a la falta de disponibilidad o continuidad.
+### 4.2 For technical operation:
+TAPLY does not guarantee the availability, continuity or infallibility of website operation, and consequently excludes any liability for damages of any nature that may be due to lack of availability or continuity.
 
-### 4.3 Por daños al usuario:
-TAPLY no se hace responsable de los posibles daños o perjuicios al usuario como consecuencia de interferencias, interrupciones, virus informáticos, averías telefónicas o desconexiones en el funcionamiento operativo del sistema electrónico.
+### 4.3 For user damages:
+TAPLY is not responsible for possible damages to the user as a result of interference, interruptions, computer viruses, telephone breakdowns or disconnections in the operational functioning of the electronic system.
 
-## 5. PROTECCIÓN DE DATOS PERSONALES
+## 5. PERSONAL DATA PROTECTION
 
-De acuerdo con el Reglamento (UE) 2016/679 y la Ley Orgánica 3/2018, TAPLY trata los datos personales según su Política de Privacidad, disponible en el sitio web.
+In accordance with Regulation (EU) 2016/679 and Organic Law 3/2018, TAPLY processes personal data according to its Privacy Policy, available on the website.
 
-## 6. LEGISLACIÓN APLICABLE
+## 6. APPLICABLE LEGISLATION
 
-El presente aviso legal se rige por la legislación española vigente:
-- **Ley 34/2002, de 11 de julio**, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE)
-- **Reglamento (UE) 2016/679** relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales
-- **Ley Orgánica 3/2018, de 5 de diciembre**, de Protección de Datos Personales y garantía de los derechos digitales
+This legal notice is governed by current Spanish legislation:
+- **Law 34/2002, of July 11**, on Information Society Services and Electronic Commerce (LSSI-CE)
+- **Regulation (EU) 2016/679** relating to the protection of natural persons with regard to the processing of personal data
+- **Organic Law 3/2018, of December 5**, on Personal Data Protection and guarantee of digital rights
 
-## 7. JURISDICCIÓN
+## 7. JURISDICTION
 
-Para la resolución de cualquier controversia que pueda surgir en relación con este sitio web, las partes se someten a los Juzgados y Tribunales de [Ciudad], España, renunciando a cualquier otro fuero que pudiera corresponderles.
+For the resolution of any dispute that may arise in relation to this website, the parties submit to the Courts and Tribunals of [City], Spain, waiving any other jurisdiction that may correspond to them.
 
-## 8. MODIFICACIONES
+## 8. MODIFICATIONS
 
-TAPLY se reserva el derecho de modificar el presente aviso legal en cualquier momento, publicando las modificaciones en el sitio web.
+TAPLY reserves the right to modify this legal notice at any time, publishing the modifications on the website.
 
-## 9. CONTACTO
+## 9. CONTACT
 
-Para cualquier consulta relacionada con este aviso legal, puede contactar con TAPLY en:
-- **Dirección**: [Dirección completa de la empresa]
-- **Teléfono**: [+34] [Número de teléfono]
+For any questions related to this legal notice, you can contact TAPLY at:
+- **Address**: [Complete company address]
+- **Phone**: [+34] [Phone number]
 - **Email**: legal@taply.com
-- **Sitio web**: taply.com
+- **Website**: taply.com
 
-**Última actualización: Octubre 2025**
+**Last updated: October 2025**

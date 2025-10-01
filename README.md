@@ -1,56 +1,56 @@
-# Taply - Landing Page de Prerregistro
+# Taply - Pre-registration Landing Page
 
 ![Taply Logo](public/taply.png)
 
-## 🎯 Descripción
+## 🎯 Description
 
-Landing page premium para Taply, la tarjeta inteligente con tecnología NFC que conecta a profesionales y creativos de manera innovadora. Esta aplicación está construida con Next.js 14, TypeScript, Tailwind CSS y conectada a MongoDB Atlas para gestionar prerregistros.
+Premium landing page for Taply, the smart card with NFC technology that connects professionals and creatives in an innovative way. This application is built with Next.js 14, TypeScript, Tailwind CSS and connected to MongoDB Atlas to manage pre-registrations.
 
-## ✨ Características
+## ✨ Features
 
-### Diseño y UX
-- **Estética premium**: Fondo oscuro con acentos en azul eléctrico (#007AFF) y verde lima (#A8FF60)
-- **Animaciones fluidas**: Microinteracciones con Framer Motion
-- **Diseño responsivo**: Optimizado para todos los dispositivos
-- **Tipografía moderna**: Montserrat (títulos) e Inter (cuerpo)
+### Design and UX
+- **Premium aesthetics**: Dark background with electric blue (#007AFF) and lime green (#A8FF60) accents
+- **Fluid animations**: Micro-interactions with Framer Motion
+- **Responsive design**: Optimized for all devices
+- **Modern typography**: Montserrat (headings) and Inter (body)
 
-### Secciones
-1. **Hero**: Logo, tagline, animación NFC y CTA principal
-2. **Beneficios**: 5 características clave con iconografía minimalista
-3. **Cómo funciona**: Proceso de 4 pasos con visualización interactiva
-4. **Prerregistro**: Formulario conectado a MongoDB Atlas
-5. **Footer**: Enlaces legales y redes sociales
+### Sections
+1. **Hero**: Logo, tagline, NFC animation and main CTA
+2. **Benefits**: 5 key features with minimalist iconography
+3. **How it works**: 4-step process with interactive visualization
+4. **Pre-registration**: Form connected to MongoDB Atlas
+5. **Footer**: Legal links and social networks
 
-### Funcionalidades técnicas
-- **Prerregistro completo**: Validación de datos y almacenamiento en MongoDB
-- **API Routes**: Endpoints seguros para manejo de datos
-- **Validaciones**: Email, teléfono y campos requeridos
-- **Feedback visual**: Mensajes de éxito/error en tiempo real
-- **SEO optimizado**: Metadata y estructura semántica
+### Technical features
+- **Complete pre-registration**: Data validation and MongoDB storage
+- **API Routes**: Secure endpoints for data management
+- **Validations**: Email, phone and required fields
+- **Visual feedback**: Success/error messages in real time
+- **SEO optimized**: Metadata and semantic structure
 
-## 🚀 Instalación y Configuración
+## 🚀 Installation and Configuration
 
-### Prerrequisitos
-- Node.js 18+ 
-- npm o yarn
-- Cuenta de MongoDB Atlas
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+- MongoDB Atlas account
 
-### 1. Instalar dependencias
+### 1. Install dependencies
 
 \`\`\`bash
 npm install
 \`\`\`
 
-### 2. Configurar MongoDB Atlas
+### 2. Configure MongoDB Atlas
 
-1. Crea una cuenta en [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-2. Crea un nuevo cluster (el tier gratuito es suficiente)
-3. Crea un usuario de base de datos con permisos de lectura/escritura
-4. Obtén tu connection string (debería verse así: `mongodb+srv://usuario:password@cluster.mongodb.net/`)
+1. Create an account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+2. Create a new cluster (the free tier is sufficient)
+3. Create a database user with read/write permissions
+4. Get your connection string (should look like: `mongodb+srv://user:password@cluster.mongodb.net/`)
 
-### 3. Variables de entorno
+### 3. Environment variables
 
-Crea un archivo `.env.local` en la raíz del proyecto con las siguientes variables:
+Create a `.env.local` file in the project root with the following variables:
 
 \`\`\`env
 # MongoDB Atlas Connection String
@@ -60,84 +60,84 @@ MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<database>
 MONGODB_DB=taply
 \`\`\`
 
-**Importante**: Reemplaza `<username>`, `<password>`, `<cluster>` y `<database>` con tus datos reales.
+**Important**: Replace `<username>`, `<password>`, `<cluster>` and `<database>` with your real data.
 
-### 4. Ejecutar en desarrollo
+### 4. Run in development
 
 \`\`\`bash
 npm run dev
 \`\`\`
 
-La aplicación estará disponible en [http://localhost:3000](http://localhost:3000)
+The application will be available at [http://localhost:3000](http://localhost:3000)
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 \`\`\`
 taply/
 ├── app/
 │   ├── api/
 │   │   └── preregister/
-│   │       └── route.ts          # API endpoint para prerregistros
-│   ├── globals.css               # Estilos globales y utilidades
-│   ├── layout.tsx                # Layout principal con fuentes
-│   └── page.tsx                  # Página principal
+│   │       └── route.ts          # API endpoint for pre-registrations
+│   ├── globals.css               # Global styles and utilities
+│   ├── layout.tsx                # Main layout with fonts
+│   └── page.tsx                  # Main page
 ├── components/
-│   ├── Hero.tsx                  # Sección hero con animaciones
-│   ├── Benefits.tsx              # Beneficios de Taply
-│   ├── HowItWorks.tsx           # Proceso de 4 pasos
-│   ├── PreRegister.tsx          # Formulario de prerregistro
-│   └── Footer.tsx               # Footer con enlaces y redes
+│   ├── Hero.tsx                  # Hero section with animations
+│   ├── Benefits.tsx              # Taply benefits
+│   ├── HowItWorks.tsx           # 4-step process
+│   ├── PreRegister.tsx          # Pre-registration form
+│   └── Footer.tsx               # Footer with links and social networks
 ├── lib/
-│   ├── mongodb.ts               # Configuración de MongoDB
+│   ├── mongodb.ts               # MongoDB configuration
 │   └── models/
-│       └── PreRegister.ts       # Modelo y validaciones
+│       └── PreRegister.ts       # Model and validations
 ├── public/
-│   └── taply.png                # Logo de Taply
-├── .env.local.example           # Ejemplo de variables de entorno
+│   └── taply.png                # Taply logo
+├── .env.local.example           # Example of environment variables
 ├── package.json
-├── tailwind.config.ts           # Configuración de Tailwind
+├── tailwind.config.ts           # Tailwind configuration
 └── tsconfig.json
 \`\`\`
 
-## 🎨 Guía de Marca
+## 🎨 Brand Guide
 
-### Colores
-- **Azul eléctrico**: #007AFF (principal)
-- **Verde lima**: #A8FF60 (acento)
-- **Negro carbón**: #111111 (fondo)
-- **Gris oscuro**: #1C1C1E (secundario)
-- **Blanco**: #FFFFFF (texto)
+### Colors
+- **Electric blue**: #007AFF (primary)
+- **Lime green**: #A8FF60 (accent)
+- **Carbon black**: #111111 (background)
+- **Dark gray**: #1C1C1E (secondary)
+- **White**: #FFFFFF (text)
 
-### Tipografía
-- **Montserrat Bold**: Logos y títulos
-- **Inter**: Texto de cuerpo
+### Typography
+- **Montserrat Bold**: Logos and headings
+- **Inter**: Body text
 
-### Principios de diseño
-- Minimalista y tecnológico
-- Animaciones sutiles y elegantes
-- Microinteracciones en hover y tap
-- Espacios amplios y jerarquía clara
+### Design principles
+- Minimalist and technological
+- Subtle and elegant animations
+- Micro-interactions on hover and tap
+- Spacious layout and clear hierarchy
 
-## 🔧 Scripts Disponibles
+## 🔧 Available Scripts
 
 \`\`\`bash
-npm run dev      # Ejecuta el servidor de desarrollo
-npm run build    # Construye la aplicación para producción
-npm run start    # Ejecuta la aplicación en modo producción
-npm run lint     # Ejecuta el linter
+npm run dev      # Runs the development server
+npm run build    # Builds the application for production
+npm run start    # Runs the application in production mode
+npm run lint     # Runs the linter
 \`\`\`
 
 ## 📊 API Endpoints
 
 ### POST /api/preregister
-Registra un nuevo usuario en la lista de espera.
+Registers a new user on the waiting list.
 
 **Request body:**
 \`\`\`json
 {
-  "name": "Juan Pérez",
-  "email": "juan@ejemplo.com",
-  "phone": "+34 612 345 678" // opcional
+  "name": "John Smith",
+  "email": "john@example.com",
+  "phone": "+1 555 123 456" // optional
 }
 \`\`\`
 
@@ -145,7 +145,7 @@ Registra un nuevo usuario en la lista de espera.
 \`\`\`json
 {
   "success": true,
-  "message": "Prerregistro exitoso",
+  "message": "Pre-registration successful",
   "id": "..."
 }
 \`\`\`
@@ -153,12 +153,12 @@ Registra un nuevo usuario en la lista de espera.
 **Response (400/409/500):**
 \`\`\`json
 {
-  "error": "Mensaje de error"
+  "error": "Error message"
 }
 \`\`\`
 
 ### GET /api/preregister
-Obtiene estadísticas de prerregistros (proteger en producción).
+Gets pre-registration statistics (protect in production).
 
 **Response (200):**
 \`\`\`json
@@ -167,53 +167,53 @@ Obtiene estadísticas de prerregistros (proteger en producción).
 }
 \`\`\`
 
-## 🚀 Despliegue
+## 🚀 Deployment
 
-### Vercel (Recomendado)
+### Vercel (Recommended)
 
-1. Haz push de tu código a GitHub
-2. Importa el proyecto en [Vercel](https://vercel.com)
-3. Añade las variables de entorno en la configuración de Vercel
-4. Despliega automáticamente
+1. Push your code to GitHub
+2. Import the project in [Vercel](https://vercel.com)
+3. Add environment variables in Vercel configuration
+4. Deploy automatically
 
-### Otras plataformas
+### Other platforms
 - Netlify
 - Railway
 - Render
 - DigitalOcean App Platform
 
-**Importante**: No olvides configurar las variables de entorno en tu plataforma de hosting.
+**Important**: Don't forget to configure environment variables on your hosting platform.
 
-## 🔒 Seguridad
+## 🔒 Security
 
-- Las variables de entorno nunca se commitean al repositorio
-- Las validaciones de datos se hacen tanto en cliente como en servidor
-- Los emails se almacenan en minúsculas para evitar duplicados
-- El endpoint de estadísticas debe protegerse con autenticación en producción
+- Environment variables are never committed to the repository
+- Data validation is done on both client and server
+- Emails are stored in lowercase to avoid duplicates
+- The statistics endpoint should be protected with authentication in production
 
-## 🎯 Próximos Pasos
+## 🎯 Next Steps
 
-- [ ] Implementar sistema de autenticación para admin
-- [ ] Dashboard para visualizar prerregistros
-- [ ] Sistema de notificaciones por email
-- [ ] A/B testing de CTAs
-- [ ] Analytics y tracking de conversiones
-- [ ] Sistema de referidos
-- [ ] Integración con CRM
+- [ ] Implement admin authentication system
+- [ ] Dashboard to visualize pre-registrations
+- [ ] Email notification system
+- [ ] A/B testing of CTAs
+- [ ] Analytics and conversion tracking
+- [ ] Referral system
+- [ ] CRM integration
 
-## 🤝 Contribuciones
+## 🤝 Contributions
 
-Este es un proyecto privado de Taply. Para contribuir, contacta con el equipo de desarrollo.
+This is a private Taply project. To contribute, contact the development team.
 
-## 📄 Licencia
+## 📄 License
 
-© 2025 Taply. Todos los derechos reservados.
+© 2025 Taply. All rights reserved.
 
-## 📞 Contacto
+## 📞 Contact
 
-Para más información sobre Taply, visita nuestra landing page o contáctanos a través de nuestras redes sociales.
+For more information about Taply, visit our landing page or contact us through our social networks.
 
 ---
 
-**Desarrollado con ❤️ para el profesional del futuro**
+**Developed with ❤️ for the professional of the future**
 

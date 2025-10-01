@@ -1,133 +1,133 @@
-# POLÍTICA DE COOKIES
+# COOKIE POLICY
 
-## 1. ¿QUÉ SON LAS COOKIES?
+## 1. WHAT ARE COOKIES?
 
-Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita sitios web. Contienen información sobre su navegación y permiten recordar sus preferencias, mejorar la experiencia de usuario y ofrecer contenido personalizado.
+Cookies are small text files that are stored on your device when you visit websites. They contain information about your browsing and allow us to remember your preferences, improve the user experience, and offer personalized content.
 
-## 2. LEGISLACIÓN APLICABLE
+## 2. APPLICABLE LEGISLATION
 
-Esta política cumple con:
-- **Ley 34/2002 (LSSI-CE)** de Servicios de la Sociedad de la Información y Comercio Electrónico
-- **Reglamento (UE) 2016/679 (RGPD)** sobre protección de datos personales
-- **Guía sobre el uso de cookies** de la Agencia Española de Protección de Datos (AEPD)
+This policy complies with:
+- **Law 34/2002 (LSSI-CE)** on Information Society Services and Electronic Commerce
+- **Regulation (EU) 2016/679 (GDPR)** on personal data protection
+- **Cookie usage guide** from the Spanish Data Protection Agency (AEPD)
 
-## 3. RESPONSABLE DEL TRATAMIENTO
+## 3. DATA CONTROLLER
 
-**TAPLY, S.L.** utiliza cookies en su sitio web taply.com y aplicación móvil para mejorar la experiencia del usuario y ofrecer servicios personalizados.
+**TAPLY, S.L.** uses cookies on its website taply.com and mobile application to improve user experience and offer personalized services.
 
-## 4. TIPOS DE COOKIES QUE UTILIZAMOS
+## 4. TYPES OF COOKIES WE USE
 
-### 4.1 Según su duración:
-- **Cookies de sesión**: Se eliminan al cerrar el navegador
-- **Cookies persistentes**: Permanecen durante un tiempo determinado
+### 4.1 According to their duration:
+- **Session cookies**: Deleted when closing the browser
+- **Persistent cookies**: Remain for a determined time
 
-### 4.2 Según su propósito:
-- **Cookies técnicas**: Esenciales para el funcionamiento del sitio
-- **Cookies de análisis**: Recopilan información estadística
-- **Cookies de personalización**: Recuerdan preferencias del usuario
-- **Cookies publicitarias**: Gestionan espacios publicitarios
+### 4.2 According to their purpose:
+- **Technical cookies**: Essential for site operation
+- **Analytics cookies**: Collect statistical information
+- **Personalization cookies**: Remember user preferences
+- **Advertising cookies**: Manage advertising spaces
 
-### 4.3 Según su origen:
-- **Cookies propias**: Instaladas por TAPLY
-- **Cookies de terceros**: Instaladas por proveedores externos
+### 4.3 According to their origin:
+- **Own cookies**: Installed by TAPLY
+- **Third-party cookies**: Installed by external providers
 
-## 5. COOKIES UTILIZADAS EN NUESTRA PLATAFORMA
+## 5. COOKIES USED ON OUR PLATFORM
 
-### 5.1 Cookies técnicas (necesarias):
-| Nombre | Propósito | Duración | Origen |
-|--------|-----------|----------|--------|
-| `taply_session` | Gestión de sesión de usuario | Sesión | Propia |
-| `taply_auth` | Autenticación de usuario | 24 horas | Propia |
-| `taply_csrf` | Protección CSRF | Sesión | Propia |
+### 5.1 Technical cookies (necessary):
+| Name | Purpose | Duration | Origin |
+|------|---------|----------|--------|
+| `taply_session` | User session management | Session | Own |
+| `taply_auth` | User authentication | 24 hours | Own |
+| `taply_csrf` | CSRF protection | Session | Own |
 
-### 5.2 Cookies de análisis:
-| Nombre | Propósito | Duración | Origen |
-|--------|-----------|----------|--------|
-| `_ga` | Google Analytics - Usuarios únicos | 2 años | Google |
-| `_gid` | Google Analytics - Sesiones | 24 horas | Google |
-| `_gat` | Google Analytics - Limitar requests | 1 minuto | Google |
+### 5.2 Analytics cookies:
+| Name | Purpose | Duration | Origin |
+|------|---------|----------|--------|
+| `_ga` | Google Analytics - Unique users | 2 years | Google |
+| `_gid` | Google Analytics - Sessions | 24 hours | Google |
+| `_gat` | Google Analytics - Limit requests | 1 minute | Google |
 
-### 5.3 Cookies de personalización:
-| Nombre | Propósito | Duración | Origen |
-|--------|-----------|----------|--------|
-| `taply_lang` | Idioma preferido | 1 año | Propia |
-| `taply_theme` | Tema visual | 1 año | Propia |
-| `taply_layout` | Preferencias de diseño | 1 año | Propia |
+### 5.3 Personalization cookies:
+| Name | Purpose | Duration | Origin |
+|------|---------|----------|--------|
+| `taply_lang` | Preferred language | 1 year | Own |
+| `taply_theme` | Visual theme | 1 year | Own |
+| `taply_layout` | Design preferences | 1 year | Own |
 
-### 5.4 Cookies de terceros:
-- **Google Analytics**: Para análisis de tráfico y comportamiento
-- **Redes sociales**: Para integración con plataformas externas
-- **Procesadores de pago**: Para gestionar transacciones seguras
+### 5.4 Third-party cookies:
+- **Google Analytics**: For traffic and behavior analysis
+- **Social networks**: For integration with external platforms
+- **Payment processors**: To manage secure transactions
 
-## 6. FINALIDADES DE LAS COOKIES
+## 6. PURPOSES OF COOKIES
 
-- **Funcionalidad**: Recordar inicio de sesión, preferencias de idioma
-- **Análisis**: Comprender cómo usan los usuarios nuestra plataforma
-- **Personalización**: Adaptar contenido a intereses del usuario
-- **Publicidad**: Mostrar anuncios relevantes (con consentimiento)
+- **Functionality**: Remember login, language preferences
+- **Analysis**: Understand how users use our platform
+- **Personalization**: Adapt content to user interests
+- **Advertising**: Show relevant ads (with consent)
 
-## 7. GESTIÓN DE COOKIES
+## 7. COOKIE MANAGEMENT
 
-### 7.1 Panel de configuración:
-Puede gestionar sus preferencias de cookies a través de nuestro panel de configuración disponible en:
-- Pie de página del sitio web
-- Configuración de la aplicación móvil
-- Primera visita al sitio web
+### 7.1 Configuration panel:
+You can manage your cookie preferences through our configuration panel available at:
+- Website footer
+- Mobile application settings
+- First visit to the site
 
-### 7.2 Configuración del navegador:
-Puede bloquear o eliminar cookies mediante la configuración de su navegador:
+### 7.2 Browser configuration:
+You can block or delete cookies through your browser settings:
 
 #### Chrome:
-Configuración → Privacidad y seguridad → Cookies y otros datos de sitios
+Settings → Privacy and security → Cookies and other site data
 
 #### Firefox:
-Preferencias → Privacidad y seguridad → Cookies y datos de sitios
+Preferences → Privacy and security → Cookies and site data
 
 #### Safari:
-Preferencias → Privacidad → Gestionar datos de sitios web
+Preferences → Privacy → Manage website data
 
 #### Edge:
-Configuración → Cookies y permisos de sitios
+Settings → Cookies and site permissions
 
-### 7.3 Herramientas de terceros:
-- **Ghostery**: Extensión para bloqueo de trackers
-- **uBlock Origin**: Bloqueador de anuncios y trackers
-- **Privacy Badger**: Protección automática contra rastreo
+### 7.3 Third-party tools:
+- **Ghostery**: Extension for tracker blocking
+- **uBlock Origin**: Ad and tracker blocker
+- **Privacy Badger**: Automatic protection against tracking
 
-## 8. CONSECUENCIAS DE NO ACEPTAR COOKIES
+## 8. CONSEQUENCES OF NOT ACCEPTING COOKIES
 
-Algunas funcionalidades podrían no estar disponibles:
-- Inicio de sesión automático
-- Recordar preferencias de idioma
-- Estadísticas personalizadas
-- Recomendaciones de contenido
+Some functionalities may not be available:
+- Automatic login
+- Remember language preferences
+- Personalized statistics
+- Content recommendations
 
-## 9. ACTUALIZACIONES Y CAMBIOS
+## 9. UPDATES AND CHANGES
 
-Podemos actualizar esta política de cookies periódicamente para reflejar cambios en nuestra tecnología o legislación aplicable.
+We may update this cookie policy periodically to reflect changes in our technology or applicable legislation.
 
-## 10. TRANSFERENCIAS INTERNACIONALES
+## 10. INTERNATIONAL TRANSFERS
 
-Algunos proveedores de cookies pueden estar ubicados fuera del Espacio Económico Europeo. Garantizamos:
-- Decisiones de adecuación de la Comisión Europea
-- Cláusulas contractuales tipo
-- Certificaciones adecuadas
+Some cookie providers may be located outside the European Economic Area. We guarantee:
+- European Commission adequacy decisions
+- Standard contractual clauses
+- Appropriate certifications
 
-## 11. DERECHOS DEL USUARIO
+## 11. USER RIGHTS
 
-De acuerdo con el RGPD, usted tiene derecho a:
-- **Información**: Sobre qué cookies utilizamos
-- **Acceso**: A los datos recopilados mediante cookies
-- **Rectificación**: De datos inexactos
-- **Supresión**: De sus datos personales
-- **Oposición**: Al tratamiento de sus datos
-- **Portabilidad**: De sus datos a otro proveedor
+According to the GDPR, you have the right to:
+- **Information**: About what cookies we use
+- **Access**: To data collected through cookies
+- **Rectification**: Of inaccurate data
+- **Erasure**: Of your personal data
+- **Objection**: To the processing of your data
+- **Portability**: Of your data to another provider
 
-## 12. CONTACTO
+## 12. CONTACT
 
-Para cualquier consulta sobre nuestra política de cookies:
+For any questions about our cookie policy:
 - **Email**: privacidad@taply.com
-- **Teléfono**: [+34] [Número de teléfono]
-- **Dirección**: [Dirección completa de TAPLY]
+- **Phone**: [+34] [Phone number]
+- **Address**: [Complete TAPLY address]
 
-**Última actualización: Octubre 2025**
+**Last updated: October 2025**

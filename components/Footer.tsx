@@ -57,7 +57,7 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              La tarjeta que conecta contigo
+              The card that connects with you
             </motion.p>
             <motion.p
               className="text-gray-500 text-base leading-relaxed"
@@ -66,7 +66,7 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              Tecnología, simplicidad y exclusividad en la palma de tu mano
+              Technology, simplicity and exclusivity in the palm of your hand
             </motion.p>
           </motion.div>
 
@@ -80,10 +80,10 @@ export default function Footer() {
             <h3 className="font-semibold text-white mb-6 text-xl">Legal</h3>
             <ul className="space-y-4">
               {[
-                { text: "Términos y condiciones", href: "/terminos-y-condiciones" },
-                { text: "Política de privacidad", href: "/politica-de-privacidad" },
-                { text: "Política de cookies", href: "/politica-de-cookies" },
-                { text: "Aviso legal", href: "/aviso-legal" }
+                { text: "Terms and conditions", href: "/terminos-y-condiciones" },
+                { text: "Privacy policy", href: "/politica-de-privacidad" },
+                { text: "Cookie policy", href: "/politica-de-cookies" },
+                { text: "Legal notice", href: "/aviso-legal" }
               ].map((link, index) => (
                 <motion.li
                   key={index}
@@ -119,7 +119,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-semibold text-white mb-6 text-xl">Síguenos</h3>
+            <h3 className="font-semibold text-white mb-6 text-xl">Follow us</h3>
             <div className="grid grid-cols-2 gap-4">
               {[
                 {
@@ -206,7 +206,7 @@ export default function Footer() {
               className="text-gray-400 text-lg font-medium"
               whileHover={{ scale: 1.02 }}
             >
-              © {currentYear} Taply. Todos los derechos reservados.
+              © {currentYear} Taply. All rights reserved.
             </motion.p>
             <motion.p
               className="text-gray-500 text-base leading-relaxed max-w-2xl mx-auto"
@@ -215,7 +215,7 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
             >
-              Diseñado con tecnología de vanguardia para el profesional del futuro
+              Designed with cutting-edge technology for the professional of the future
             </motion.p>
 
             {/* Elementos decorativos sutiles */}

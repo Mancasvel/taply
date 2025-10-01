@@ -45,25 +45,25 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Tagline principal */}
+          {/* Main tagline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl"
           >
-            La tarjeta que{' '}
-            <span className="text-gradient">conecta contigo</span>
+            The card that{' '}
+            <span className="text-gradient">connects with you</span>
           </motion.h1>
 
-          {/* Descripción */}
+          {/* Description */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl"
           >
-            Tecnología, simplicidad y exclusividad en la palma de tu mano
+            Technology, simplicity and exclusivity in the palm of your hand
           </motion.p>
 
           {/* Animación de tap/NFC mejorada */}
@@ -195,7 +195,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Regístrate ahora
+              Register now
               <motion.svg
                 animate={{ x: [0, 5, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
@@ -241,7 +241,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 1.2 }}
             className="mt-4 text-sm text-gray-400"
           >
-            Sé de los primeros en experimentar Taply
+            Be among the first to experience Taply
           </motion.p>
         </motion.div>
       </div>

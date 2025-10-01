@@ -35,15 +35,15 @@ export default function PreRegister() {
 
       if (response.ok) {
         setStatus('success')
-        setMessage('¡Registro exitoso! Te contactaremos pronto.')
+        setMessage('Registration successful! We\'ll be in touch soon.')
         setFormData({ name: '', email: '', phone: '' })
       } else {
         setStatus('error')
-        setMessage(data.error || 'Hubo un error. Por favor, intenta de nuevo.')
+        setMessage(data.error || 'There was an error. Please try again.')
       }
     } catch {
       setStatus('error')
-      setMessage('Error de conexión. Por favor, intenta de nuevo.')
+      setMessage('Connection error. Please try again.')
     }
 
     setTimeout(() => {
@@ -73,10 +73,10 @@ export default function PreRegister() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Únete a la <span className="text-gradient">revolución</span>
+            Join the <span className="text-gradient">revolution</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Regístrate y sé de los primeros en experimentar Taply
+            Register and be among the first to experience Taply
           </p>
         </motion.div>
 
@@ -159,7 +159,7 @@ export default function PreRegister() {
                 className="block text-sm font-semibold mb-3 text-gray-300 group-focus-within:text-taply-blue transition-colors duration-300"
                 whileHover={{ scale: 1.02 }}
               >
-                Nombre completo *
+                Full name *
               </motion.label>
               <motion.input
                 type="text"
@@ -169,7 +169,7 @@ export default function PreRegister() {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full px-8 py-5 bg-gradient-to-r from-taply-dark to-taply-dark/80 border border-gray-700/60 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-taply-blue focus:ring-2 focus:ring-taply-blue/30 transition-all duration-500 hover:border-gray-600 focus:bg-taply-dark"
-                placeholder="Juan Pérez"
+                placeholder="John Smith"
                 whileFocus={{
                   scale: 1.02,
                   borderColor: "#007AFF",
@@ -190,7 +190,7 @@ export default function PreRegister() {
                 className="block text-sm font-semibold mb-3 text-gray-300 group-focus-within:text-taply-blue transition-colors duration-300"
                 whileHover={{ scale: 1.02 }}
               >
-                Correo electrónico *
+                Email address *
               </motion.label>
               <motion.input
                 type="email"
@@ -200,7 +200,7 @@ export default function PreRegister() {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full px-8 py-5 bg-gradient-to-r from-taply-dark to-taply-dark/80 border border-gray-700/60 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-taply-blue focus:ring-2 focus:ring-taply-blue/30 transition-all duration-500 hover:border-gray-600 focus:bg-taply-dark"
-                placeholder="juan@ejemplo.com"
+                placeholder="john@example.com"
                 whileFocus={{
                   scale: 1.02,
                   borderColor: "#007AFF",
@@ -221,7 +221,7 @@ export default function PreRegister() {
                 className="block text-sm font-semibold mb-3 text-gray-300 group-focus-within:text-taply-blue transition-colors duration-300"
                 whileHover={{ scale: 1.02 }}
               >
-                Teléfono (opcional)
+                Phone (optional)
               </motion.label>
               <motion.input
                 type="tel"
@@ -230,7 +230,7 @@ export default function PreRegister() {
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full px-8 py-5 bg-gradient-to-r from-taply-dark to-taply-dark/80 border border-gray-700/60 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-taply-blue focus:ring-2 focus:ring-taply-blue/30 transition-all duration-500 hover:border-gray-600 focus:bg-taply-dark"
-                placeholder="+34 612 345 678"
+                placeholder="+1 555 123 456"
                 whileFocus={{
                   scale: 1.02,
                   borderColor: "#007AFF",
@@ -283,7 +283,7 @@ export default function PreRegister() {
                   </>
                 ) : (
                   <>
-                    Quiero mi Taply
+                    I want my Taply
                     <motion.svg
                       animate={{ x: [0, 5, 0] }}
                       transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
@@ -326,7 +326,7 @@ export default function PreRegister() {
             </motion.button>
 
             <p className="text-center text-sm text-gray-500">
-              Al registrarte, aceptas recibir información sobre Taply
+              By registering, you agree to receive information about Taply
             </p>
           </form>
         </motion.div>
@@ -345,9 +345,9 @@ export default function PreRegister() {
           className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           {[
-            { number: "100%", label: "Seguro y privado", color: "from-taply-blue to-blue-600" },
-            { number: "24/7", label: "Soporte disponible", color: "from-taply-lime to-green-500" },
-            { number: "∞", label: "Conexiones ilimitadas", color: "from-taply-blue to-purple-600" }
+            { number: "100%", label: "Secure and private", color: "from-taply-blue to-blue-600" },
+            { number: "24/7", label: "Support available", color: "from-taply-lime to-green-500" },
+            { number: "∞", label: "Unlimited connections", color: "from-taply-blue to-purple-600" }
           ].map((stat, index) => (
             <motion.div
               key={index}

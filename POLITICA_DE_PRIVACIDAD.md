@@ -1,172 +1,172 @@
-# POLÍTICA DE PRIVACIDAD
+# PRIVACY POLICY
 
-## 1. RESPONSABLE DEL TRATAMIENTO
+## 1. DATA CONTROLLER
 
-**TAPLY, S.L.** (en adelante, "TAPLY" o "nosotros"), con domicilio social en [Dirección de la empresa], [Código Postal], [Ciudad], [Provincia], España, y CIF/NIF [Número de identificación fiscal], es el responsable del tratamiento de sus datos personales.
+**TAPLY, S.L.** (hereinafter, "TAPLY" or "we"), with registered office at [Company address], [Postal Code], [City], [Province], Spain, and CIF/NIF [Tax identification number], is the controller of your personal data.
 
-**Delegado de Protección de Datos (DPD):** privacidad@taply.com
+**Data Protection Officer (DPO):** privacidad@taply.com
 
-## 2. LEGISLACIÓN APLICABLE
+## 2. APPLICABLE LEGISLATION
 
-Esta política se rige por:
-- **Reglamento (UE) 2016/679 (RGPD)** del Parlamento Europeo y del Consejo
-- **Ley Orgánica 3/2018 (LOPDGDD)** de Protección de Datos Personales y garantía de los derechos digitales
-- **Ley 34/2002 (LSSI-CE)** de Servicios de la Sociedad de la Información y Comercio Electrónico
+This policy is governed by:
+- **Regulation (EU) 2016/679 (GDPR)** of the European Parliament and of the Council
+- **Organic Law 3/2018 (LOPDGDD)** on Personal Data Protection and guarantee of digital rights
+- **Law 34/2002 (LSSI-CE)** on Information Society Services and Electronic Commerce
 
-## 3. DATOS PERSONALES QUE TRATAMOS
+## 3. PERSONAL DATA WE PROCESS
 
-### 3.1 Datos de registro y cuenta:
-- Nombre y apellidos
-- Dirección de correo electrónico
-- Número de teléfono (opcional)
-- Información profesional (cargo, empresa, sector)
-- Datos de facturación (si procede)
+### 3.1 Registration and account data:
+- First and last name
+- Email address
+- Phone number (optional)
+- Professional information (position, company, sector)
+- Billing data (if applicable)
 
-### 3.2 Datos técnicos:
-- Dirección IP
-- Información del dispositivo
-- Datos de navegación y uso de la aplicación
-- Cookies y tecnologías similares
+### 3.2 Technical data:
+- IP address
+- Device information
+- Navigation and application usage data
+- Cookies and similar technologies
 
-### 3.3 Datos compartidos por el usuario:
-- Información incluida en el perfil de la tarjeta digital
-- Contactos profesionales compartidos mediante NFC
-- Redes sociales y enlaces profesionales
+### 3.3 Data shared by the user:
+- Information included in the digital card profile
+- Professional contacts shared via NFC
+- Social networks and professional links
 
-## 4. FINALIDADES DEL TRATAMIENTO
+## 4. PROCESSING PURPOSES
 
-Tratamos sus datos para:
+We process your data for:
 
-### 4.1 Prestación del servicio:
-- Gestión y mantenimiento de su cuenta
-- Personalización de la tarjeta digital
-- Sincronización entre dispositivos
-- Soporte técnico y atención al cliente
+### 4.1 Service provision:
+- Account management and maintenance
+- Digital card personalization
+- Synchronization between devices
+- Technical support and customer service
 
-### 4.2 Mejora de productos:
-- Análisis de uso y comportamiento
-- Desarrollo de nuevas funcionalidades
-- Estudios estadísticos internos
+### 4.2 Product improvement:
+- Usage and behavior analysis
+- Development of new features
+- Internal statistical studies
 
-### 4.3 Comunicaciones:
-- Envío de información sobre productos y servicios (con consentimiento)
-- Notificaciones técnicas y de seguridad
-- Actualizaciones de la plataforma
+### 4.3 Communications:
+- Sending information about products and services (with consent)
+- Technical and security notifications
+- Platform updates
 
-### 4.4 Cumplimiento legal:
-- Obligaciones fiscales y contables
-- Prevención de fraude y actividades ilegales
-- Respuesta a requerimientos judiciales
+### 4.4 Legal compliance:
+- Tax and accounting obligations
+- Fraud prevention and illegal activities
+- Response to judicial requirements
 
-## 5. BASE JURÍDICA DEL TRATAMIENTO
+## 5. LEGAL BASIS FOR PROCESSING
 
-- **Ejecución del contrato**: Para prestar el servicio solicitado
-- **Consentimiento**: Para comunicaciones comerciales y cookies no esenciales
-- **Interés legítimo**: Para mejorar productos y prevenir fraude
-- **Obligación legal**: Para cumplir con normativas fiscales y legales
+- **Contract performance**: To provide the requested service
+- **Consent**: For commercial communications and non-essential cookies
+- **Legitimate interest**: To improve products and prevent fraud
+- **Legal obligation**: To comply with tax and legal regulations
 
-## 6. DESTINATARIOS DE LOS DATOS
+## 6. DATA RECIPIENTS
 
-### 6.1 Terceros necesarios:
-- Proveedores de servicios tecnológicos (hosting, cloud)
-- Empresas de pago (para procesar transacciones)
-- Servicios de comunicación (envío de emails)
-- Herramientas de análisis y estadísticas
+### 6.1 Necessary third parties:
+- Technology service providers (hosting, cloud)
+- Payment companies (to process transactions)
+- Communication services (email sending)
+- Analytics and statistics tools
 
-### 6.2 Transferencias internacionales:
-Algunos proveedores pueden estar ubicados fuera del Espacio Económico Europeo. En estos casos, garantizamos:
-- Decisiones de adecuación de la Comisión Europea
-- Cláusulas contractuales tipo aprobadas
-- Certificaciones o códigos de conducta
+### 6.2 International transfers:
+Some providers may be located outside the European Economic Area. In these cases, we guarantee:
+- European Commission adequacy decisions
+- Approved standard contractual clauses
+- Certifications or codes of conduct
 
-## 7. CONSERVACIÓN DE DATOS
+## 7. DATA RETENTION
 
-Conservamos sus datos durante:
-- **Mientras dure la relación contractual** + 6 años (obligaciones legales)
-- **Hasta retirada del consentimiento** para comunicaciones comerciales
-- **Plazo necesario** para cumplir finalidades específicas
+We retain your data for:
+- **Duration of the contractual relationship** + 6 years (legal obligations)
+- **Until consent withdrawal** for commercial communications
+- **Necessary period** to fulfill specific purposes
 
-## 8. DERECHOS DEL INTERESADO
+## 8. DATA SUBJECT RIGHTS
 
-De acuerdo con el RGPD y LOPDGDD, usted tiene derecho a:
+In accordance with the GDPR and LOPDGDD, you have the right to:
 
-### 8.1 Acceso:
-Conocer qué datos tratamos sobre usted
+### 8.1 Access:
+Know what data we process about you
 
-### 8.2 Rectificación:
-Corregir datos inexactos o incompletos
+### 8.2 Rectification:
+Correct inaccurate or incomplete data
 
-### 8.3 Supresión:
-Eliminar sus datos ("derecho al olvido")
+### 8.3 Erasure:
+Delete your data ("right to be forgotten")
 
-### 8.4 Oposición:
-Oponerse al tratamiento de sus datos
+### 8.4 Objection:
+Object to the processing of your data
 
-### 8.5 Limitación:
-Restringir el tratamiento en ciertas circunstancias
+### 8.5 Restriction:
+Restrict processing in certain circumstances
 
-### 8.6 Portabilidad:
-Recibir sus datos en formato estructurado
+### 8.6 Portability:
+Receive your data in a structured format
 
-### 8.7 Retirada del consentimiento:
-Para tratamientos basados en consentimiento
+### 8.7 Consent withdrawal:
+For processing based on consent
 
-### 8.8 No ser objeto de decisiones automatizadas:
-Incluyendo profiling, sin intervención humana
+### 8.8 Not be subject to automated decisions:
+Including profiling, without human intervention
 
-## 9. EJERCICIO DE DERECHOS
+## 9. EXERCISE OF RIGHTS
 
-Para ejercer sus derechos:
+To exercise your rights:
 - **Email**: privacidad@taply.com
-- **Correo postal**: [Dirección completa de TAPLY]
-- **Formulario web**: Disponible en la sección de privacidad
+- **Postal mail**: [Complete TAPLY address]
+- **Web form**: Available in the privacy section
 
-**Plazo de respuesta**: 1 mes (ampliable 2 meses más si es necesario)
+**Response period**: 1 month (extendable by 2 more months if necessary)
 
-## 10. MEDIDAS DE SEGURIDAD
+## 10. SECURITY MEASURES
 
-Implementamos medidas técnicas y organizativas apropiadas:
-- Cifrado de datos en tránsito y reposo
-- Control de accesos basado en roles
-- Auditorías periódicas de seguridad
-- Formación continua del personal
-- Planes de contingencia y recuperación
+We implement appropriate technical and organizational measures:
+- Encryption of data in transit and at rest
+- Role-based access control
+- Periodic security audits
+- Continuous staff training
+- Contingency and recovery plans
 
-## 11. COOKIES Y TECNOLOGÍAS SIMILARES
+## 11. COOKIES AND SIMILAR TECHNOLOGIES
 
-### 11.1 Tipos de cookies:
-- **Técnicas**: Necesarias para el funcionamiento
-- **Analíticas**: Para medir el uso del sitio
-- **Personalización**: Para recordar preferencias
-- **Publicitarias**: Para mostrar anuncios relevantes
+### 11.1 Types of cookies:
+- **Technical**: Necessary for operation
+- **Analytical**: To measure site usage
+- **Personalization**: To remember preferences
+- **Advertising**: To show relevant ads
 
-### 11.2 Gestión de cookies:
-Puede gestionar sus preferencias a través de nuestro panel de configuración de cookies o la configuración de su navegador.
+### 11.2 Cookie management:
+You can manage your preferences through our cookie configuration panel or your browser settings.
 
-## 12. MENORES DE EDAD
+## 12. MINORS
 
-Nuestros servicios no están dirigidos a menores de 18 años. No recopilamos datos de menores intencionadamente. Si descubrimos que hemos recibido datos de un menor, los eliminaremos inmediatamente.
+Our services are not aimed at minors under 18 years old. We do not intentionally collect data from minors. If we discover that we have received data from a minor, we will delete it immediately.
 
-## 13. ACTUALIZACIONES DE LA POLÍTICA
+## 13. POLICY UPDATES
 
-Podemos actualizar esta política periódicamente. Las modificaciones serán notificadas con al menos 30 días de antelación mediante:
-- Notificación en la aplicación
-- Correo electrónico
-- Publicación en nuestra web
+We may update this policy periodically. Modifications will be notified at least 30 days in advance through:
+- Application notification
+- Email
+- Publication on our website
 
-## 14. AUTORIDAD DE CONTROL
+## 14. SUPERVISORY AUTHORITY
 
-Si considera que hemos vulnerado sus derechos, puede presentar una reclamación ante:
-- **Agencia Española de Protección de Datos (AEPD)**
-- Dirección: C/ Jorge Juan, 6, 28001 Madrid
-- Teléfono: 901 100 099
-- Web: www.aepd.es
+If you consider that we have violated your rights, you can file a complaint with:
+- **Spanish Data Protection Agency (AEPD)**
+- Address: C/ Jorge Juan, 6, 28001 Madrid
+- Phone: 901 100 099
+- Website: www.aepd.es
 
-## 15. CONTACTO
+## 15. CONTACT
 
-Para cualquier consulta sobre esta política:
+For any questions about this policy:
 - **Email**: privacidad@taply.com
-- **Teléfono**: [+34] [Número de teléfono]
-- **Dirección**: [Dirección completa]
+- **Phone**: [+34] [Phone number]
+- **Address**: [Complete address]
 
-**Última actualización: Octubre 2025**
+**Last updated: October 2025**

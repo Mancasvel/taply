@@ -15,12 +15,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Taply - La tarjeta que conecta contigo',
-  description: 'Descubre Taply, la tarjeta inteligente que combina exclusividad, tecnología y simplicidad. Regístrate y sé de los primeros en experimentar el futuro.',
-  keywords: ['taply', 'tarjeta inteligente', 'NFC', 'tecnología', 'conexión'],
+  title: 'Taply - The card that connects with you',
+  description: 'Discover Taply, the smart card that combines exclusivity, technology and simplicity. Register and be among the first to experience the future.',
+  keywords: ['taply', 'smart card', 'NFC', 'technology', 'connection'],
   openGraph: {
-    title: 'Taply - La tarjeta que conecta contigo',
-    description: 'Tecnología, simplicidad y exclusividad en la palma de tu mano',
+    title: 'Taply - The card that connects with you',
+    description: 'Technology, simplicity and exclusivity in the palm of your hand',
     type: 'website',
   },
 }
@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className={`${montserrat.variable} ${inter.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${inter.variable}`}>
       <body className="bg-taply-dark text-taply-white antialiased">
         {children}
       </body>
