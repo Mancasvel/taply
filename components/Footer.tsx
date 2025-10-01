@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -92,21 +91,20 @@ export default function Footer() {
                   transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Link href={link.href}>
-                    <motion.a
-                      className="text-gray-600 hover:text-taply-blue transition-all duration-300 text-base relative group"
-                      whileHover={{
-                        x: 5,
-                        color: "#007AFF"
-                      }}
-                    >
-                      {link.text}
-                      <motion.div
-                        className="absolute bottom-0 left-0 w-0 h-0.5 bg-taply-blue group-hover:w-full transition-all duration-300"
-                        whileHover={{ width: "100%" }}
-                      />
-                    </motion.a>
-                  </Link>
+                  <motion.a
+                    href={link.href}
+                    className="text-gray-600 hover:text-taply-blue transition-all duration-300 text-base relative group"
+                    whileHover={{
+                      x: 5,
+                      color: "#007AFF"
+                    }}
+                  >
+                    {link.text}
+                    <motion.div
+                      className="absolute bottom-0 left-0 w-0 h-0.5 bg-taply-blue group-hover:w-full transition-all duration-300"
+                      whileHover={{ width: "100%" }}
+                    />
+                  </motion.a>
                 </motion.li>
               ))}
             </ul>
