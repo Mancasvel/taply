@@ -85,33 +85,109 @@ export default function Benefits() {
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              initial={{ opacity: 0, y: 50, rotateX: 15 }}
+              animate={isInView ? { opacity: 1, y: 0, rotateX: 0 } : {}}
+              transition={{
+                duration: 0.8,
+                delay: index * 0.15,
+                type: "spring",
+                stiffness: 100,
+                damping: 15
+              }}
+              whileHover={{
+                y: -10,
+                scale: 1.02,
+                transition: { duration: 0.3, type: "spring", stiffness: 300, damping: 20 }
+              }}
               className="group relative"
             >
-              <div className="relative p-8 bg-taply-gray-dark rounded-2xl border border-gray-800 hover:border-taply-blue transition-all duration-300 h-full">
-                {/* Gradiente de fondo en hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${benefit.color} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300`}></div>
-                
+              <div className="relative p-10 bg-gradient-to-br from-taply-gray-dark to-taply-gray-dark/50 rounded-3xl border border-gray-800/50 hover:border-taply-blue/50 transition-all duration-500 h-full backdrop-blur-sm">
+                {/* Gradiente de fondo en hover mejorado */}
+                <motion.div
+                  className={`absolute inset-0 bg-gradient-to-br ${benefit.color} opacity-0 group-hover:opacity-15 rounded-3xl transition-opacity duration-500`}
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  whileHover={{ scale: 1, opacity: 0.15 }}
+                  transition={{ duration: 0.4 }}
+                />
+
                 {/* Contenido */}
                 <div className="relative z-10">
-                  <div className={`inline-flex p-4 bg-gradient-to-br ${benefit.color} rounded-xl mb-6 text-white group-hover:scale-110 transition-transform duration-300`}>
-                    {benefit.icon}
-                  </div>
-                  
-                  <h3 className="text-2xl font-bold mb-4 group-hover:text-taply-blue transition-colors duration-300">
+                  <motion.div
+                    className={`inline-flex p-5 bg-gradient-to-br ${benefit.color} rounded-2xl mb-8 text-white relative overflow-hidden`}
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: [0, -5, 5, 0],
+                      transition: { duration: 0.6 }
+                    }}
+                  >
+                    {/* Fondo animado del ícono */}
+                    <motion.div
+                      animate={{
+                        background: [
+                          `linear-gradient(45deg, ${benefit.color.includes('lime') ? '#A8FF60, #7CE54A' : '#007AFF, #0056CC'})`,
+                          `linear-gradient(45deg, ${benefit.color.includes('lime') ? '#7CE54A, #A8FF60' : '#0056CC, #007AFF'})`,
+                          `linear-gradient(45deg, ${benefit.color.includes('lime') ? '#A8FF60, #7CE54A' : '#007AFF, #0056CC'})`
+                        ]
+                      }}
+                      transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                      className="absolute inset-0 rounded-2xl opacity-50"
+                    />
+
+                    <div className="relative z-10">
+                      {benefit.icon}
+                    </div>
+
+                    {/* Partículas flotantes */}
+                    <motion.div
+                      animate={{
+                        y: [0, -10, 0],
+                        opacity: [0.3, 0.7, 0.3]
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                        delay: index * 0.5
+                      }}
+                      className="absolute -top-2 -right-2 w-3 h-3 bg-white/30 rounded-full"
+                    />
+                  </motion.div>
+
+                  <motion.h3
+                    className="text-2xl font-bold mb-5 group-hover:text-white transition-colors duration-300"
+                    whileHover={{ scale: 1.02 }}
+                  >
                     {benefit.title}
-                  </h3>
-                  
-                  <p className="text-gray-400 leading-relaxed">
+                  </motion.h3>
+
+                  <p className="text-gray-400 leading-relaxed text-lg">
                     {benefit.description}
                   </p>
                 </div>
 
-                {/* Efecto de brillo en hover */}
-                <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                  <div className="absolute top-0 left-1/2 w-1/2 h-1/2 bg-taply-blue/20 blur-2xl transform -translate-x-1/2"></div>
+                {/* Efectos de brillo mejorados */}
+                <motion.div
+                  className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                  initial={{ opacity: 0 }}
+                  whileHover={{ opacity: 1 }}
+                >
+                  <motion.div
+                    animate={{
+                      background: [
+                        "radial-gradient(circle at 20% 80%, rgba(0, 122, 255, 0.1) 0%, transparent 50%)",
+                        "radial-gradient(circle at 80% 20%, rgba(168, 255, 96, 0.1) 0%, transparent 50%)",
+                        "radial-gradient(circle at 20% 80%, rgba(0, 122, 255, 0.1) 0%, transparent 50%)"
+                      ]
+                    }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute inset-0 rounded-3xl"
+                  />
+                  <div className="absolute top-0 left-1/2 w-1/2 h-1/2 bg-gradient-to-br from-taply-blue/10 to-transparent blur-3xl transform -translate-x-1/2"></div>
+                </motion.div>
+
+                {/* Indicador sutil de número */}
+                <div className="absolute top-4 right-4 w-6 h-6 bg-gradient-to-br from-taply-blue/30 to-taply-lime/30 rounded-full flex items-center justify-center text-xs font-bold text-white/70">
+                  {index + 1}
                 </div>
               </div>
             </motion.div>

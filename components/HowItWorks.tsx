@@ -72,54 +72,142 @@ export default function HowItWorks() {
         </motion.div>
 
         <div className="relative">
-          {/* Línea conectora (solo visible en desktop) */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-taply-blue via-taply-lime to-taply-blue opacity-30 transform -translate-y-1/2"></div>
+          {/* Línea conectora sutil (solo visible en desktop) */}
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent transform -translate-y-1/2"></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
             {steps.map((step, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.15 }}
+                initial={{ opacity: 0, y: 60, scale: 0.8 }}
+                animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
+                transition={{
+                  duration: 0.8,
+                  delay: index * 0.2,
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 15
+                }}
                 className="relative"
               >
                 <div className="relative group">
-                  {/* Número de paso */}
-                  <div className="text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-taply-blue/20 to-taply-lime/20 absolute -top-8 -left-4 pointer-events-none select-none">
+                  {/* Número de paso elegante */}
+                  <div className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-taply-blue/40 to-taply-lime/40 absolute -top-8 -left-4 pointer-events-none select-none">
                     {step.number}
                   </div>
 
-                  {/* Card del paso */}
-                  <div className="relative bg-taply-gray-dark border border-gray-800 rounded-2xl p-8 hover:border-taply-blue transition-all duration-300 group-hover:transform group-hover:scale-105">
-                    {/* Icono */}
-                    <div className="relative z-10 mb-6">
-                      <div className="inline-flex p-4 bg-gradient-to-br from-taply-blue to-taply-lime rounded-xl text-white group-hover:animate-tap">
-                        {step.icon}
+                  {/* Card del paso mejorada */}
+                  <motion.div
+                    className="relative bg-gradient-to-br from-taply-gray-dark to-taply-gray-dark/80 border border-gray-800/60 rounded-3xl p-10 hover:border-taply-blue/60 transition-all duration-500 group-hover:transform group-hover:scale-105 backdrop-blur-sm"
+                    whileHover={{
+                      y: -8,
+                      transition: { duration: 0.3, type: "spring", stiffness: 300, damping: 20 }
+                    }}
+                  >
+                    {/* Icono mejorado */}
+                    <motion.div
+                      className="relative z-10 mb-8"
+                      whileHover={{
+                        scale: 1.1,
+                        rotate: [0, -10, 10, 0],
+                        transition: { duration: 0.6 }
+                      }}
+                    >
+                      <div className="inline-flex p-6 bg-gradient-to-br from-taply-blue to-taply-lime rounded-2xl text-white relative overflow-hidden shadow-lg">
+                        {/* Fondo animado */}
+                        <motion.div
+                          animate={{
+                            background: [
+                              "linear-gradient(45deg, #007AFF, #A8FF60)",
+                              "linear-gradient(45deg, #A8FF60, #007AFF)",
+                              "linear-gradient(45deg, #007AFF, #A8FF60)"
+                            ]
+                          }}
+                          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                          className="absolute inset-0 opacity-30"
+                        />
+
+                        <div className="relative z-10">
+                          {step.icon}
+                        </div>
+
+                        {/* Partícula flotante */}
+                        <motion.div
+                          animate={{
+                            y: [0, -15, 0],
+                            x: [0, 8, 0],
+                            opacity: [0.5, 1, 0.5]
+                          }}
+                          transition={{
+                            duration: 3,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                            delay: index * 0.5
+                          }}
+                          className="absolute -top-3 -right-3 w-4 h-4 bg-white/40 rounded-full"
+                        />
                       </div>
-                    </div>
+                    </motion.div>
 
-                    {/* Título */}
-                    <h3 className="text-2xl font-bold mb-4 relative z-10 group-hover:text-taply-blue transition-colors duration-300">
+                    {/* Título mejorado */}
+                    <motion.h3
+                      className="text-2xl font-bold mb-5 relative z-10 group-hover:text-white transition-colors duration-300"
+                      whileHover={{ scale: 1.02 }}
+                    >
                       {step.title}
-                    </h3>
+                    </motion.h3>
 
-                    {/* Descripción */}
-                    <p className="text-gray-400 relative z-10 leading-relaxed">
+                    {/* Descripción mejorada */}
+                    <p className="text-gray-400 relative z-10 leading-relaxed text-lg">
                       {step.description}
                     </p>
 
-                    {/* Brillo de fondo en hover */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-taply-blue/10 to-taply-lime/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
+                    {/* Efectos de fondo mejorados */}
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-to-br from-taply-blue/5 to-taply-lime/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                      initial={{ scale: 0.9 }}
+                      whileHover={{ scale: 1 }}
+                      transition={{ duration: 0.4 }}
+                    />
 
-                  {/* Flecha conectora (solo visible en desktop) */}
+                    {/* Indicador de progreso sutil */}
+                    <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-taply-blue/50 to-taply-lime/50 rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                         style={{ width: '100%' }} />
+                  </motion.div>
+
+                  {/* Flecha conectora mejorada (solo visible en desktop) */}
                   {index < steps.length - 1 && (
-                    <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-20">
-                      <svg className="w-8 h-8 text-taply-blue" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    </div>
+                    <motion.div
+                      className="hidden lg:block absolute top-1/2 -right-6 transform -translate-y-1/2 z-20"
+                      animate={{
+                        x: [0, 10, 0],
+                        opacity: [0.5, 1, 0.5]
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                        delay: index * 0.5
+                      }}
+                    >
+                      <motion.svg
+                        className="w-10 h-10 text-taply-blue"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        animate={{
+                          scale: [1, 1.1, 1],
+                          opacity: [0.7, 1, 0.7]
+                        }}
+                        transition={{
+                          duration: 2,
+                          repeat: Infinity,
+                          ease: "easeInOut"
+                        }}
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </motion.svg>
+                    </motion.div>
                   )}
                 </div>
               </motion.div>
