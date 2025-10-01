@@ -18,10 +18,29 @@ export const metadata: Metadata = {
   title: 'Taply - The card that connects with you',
   description: 'Discover Taply, the smart card that combines exclusivity, technology and simplicity. Register and be among the first to experience the future.',
   keywords: ['taply', 'smart card', 'NFC', 'technology', 'connection'],
+  icons: {
+    icon: '/taply.png',
+    apple: '/taply.png',
+    shortcut: '/taply.png',
+  },
   openGraph: {
     title: 'Taply - The card that connects with you',
     description: 'Technology, simplicity and exclusivity in the palm of your hand',
     type: 'website',
+    images: [
+      {
+        url: '/taply.png',
+        width: 1200,
+        height: 630,
+        alt: 'Taply - Smart NFC Business Card',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Taply - The card that connects with you',
+    description: 'Technology, simplicity and exclusivity in the palm of your hand',
+    images: ['/taply.png'],
   },
 }
 
