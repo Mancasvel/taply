@@ -10,10 +10,10 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Fondo animado con gradientes */}
-      <div className="absolute inset-0 bg-gradient-taply">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-taply-blue/30 rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-taply-lime/20 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+      {/* Fondo sutil con gradientes claros */}
+      <div className="absolute inset-0 bg-gradient-to-br from-taply-cream-blue via-white to-taply-light-grey">
+        <div className="absolute top-20 left-10 w-96 h-96 bg-taply-blue/10 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-taply-dark-grey/5 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
       </div>
 
       {/* Contenido principal */}
@@ -50,10 +50,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl text-taply-black"
           >
             The card that{' '}
-            <span className="text-gradient">connects with you</span>
+            <span className="bg-gradient-to-r from-taply-blue to-taply-dark-grey bg-clip-text text-transparent">connects with you</span>
           </motion.h1>
 
           {/* Description */}
@@ -61,7 +61,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl"
+            className="text-lg md:text-xl text-gray-700 mb-12 max-w-2xl"
           >
             Technology, simplicity and exclusivity in the palm of your hand
           </motion.p>
@@ -80,24 +80,24 @@ export default function Hero() {
             className="mb-16 relative"
           >
             <div className="relative w-72 h-72 mx-auto">
-              {/* Ondas de señal NFC mejoradas */}
+              {/* Ondas de señal NFC elegantes */}
               <motion.div
                 animate={{
                   scale: [1, 1.6, 1],
-                  opacity: [0.6, 0, 0.6],
+                  opacity: [0.3, 0, 0.3],
                 }}
                 transition={{
                   duration: 2.5,
                   repeat: Infinity,
                   ease: [0.25, 0.46, 0.45, 0.94]
                 }}
-                className="absolute inset-0 border-3 border-taply-blue/60 rounded-full"
+                className="absolute inset-0 border-2 border-taply-blue/40 rounded-full"
                 style={{ top: '20%', left: '20%', right: '20%', bottom: '20%' }}
               />
               <motion.div
                 animate={{
                   scale: [1, 1.8, 1],
-                  opacity: [0.4, 0, 0.4],
+                  opacity: [0.2, 0, 0.2],
                 }}
                 transition={{
                   duration: 3,
@@ -105,13 +105,13 @@ export default function Hero() {
                   ease: [0.25, 0.46, 0.45, 0.94],
                   delay: 0.8
                 }}
-                className="absolute inset-0 border-3 border-taply-lime/50 rounded-full"
+                className="absolute inset-0 border-2 border-taply-dark-grey/30 rounded-full"
                 style={{ top: '15%', left: '15%', right: '15%', bottom: '15%' }}
               />
               <motion.div
                 animate={{
                   scale: [1, 2, 1],
-                  opacity: [0.2, 0, 0.2],
+                  opacity: [0.1, 0, 0.1],
                 }}
                 transition={{
                   duration: 3.5,
@@ -119,7 +119,7 @@ export default function Hero() {
                   ease: [0.25, 0.46, 0.45, 0.94],
                   delay: 1.6
                 }}
-                className="absolute inset-0 border-3 border-taply-blue/30 rounded-full"
+                className="absolute inset-0 border-2 border-taply-blue/20 rounded-full"
                 style={{ top: '10%', left: '10%', right: '10%', bottom: '10%' }}
               />
 
@@ -138,7 +138,7 @@ export default function Hero() {
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
-                  className="w-28 h-28 bg-gradient-to-br from-taply-blue to-blue-600 rounded-full flex items-center justify-center relative overflow-hidden"
+                  className="w-28 h-28 bg-taply-black rounded-full flex items-center justify-center relative overflow-hidden shadow-lg"
                 >
                   {/* Efecto de pulso interno */}
                   <motion.div
@@ -188,7 +188,7 @@ export default function Hero() {
               damping: 15
             }}
             onClick={scrollToPreRegister}
-            className="group relative px-16 py-6 bg-gradient-to-r from-taply-blue to-blue-600 text-white text-xl font-bold rounded-full overflow-hidden transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:shadow-taply-blue/50 focus:outline-none focus:ring-4 focus:ring-taply-blue/30"
+            className="group relative px-16 py-6 bg-taply-black text-white text-xl font-bold rounded-full overflow-hidden transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:shadow-taply-dark-grey/50 focus:outline-none focus:ring-4 focus:ring-taply-blue/30"
           >
             <motion.span
               className="relative z-10 flex items-center gap-3"
@@ -208,13 +208,13 @@ export default function Hero() {
               </motion.svg>
             </motion.span>
 
-            {/* Efectos de fondo mejorados */}
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-taply-lime to-taply-blue opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              initial={{ scale: 0 }}
-              whileHover={{ scale: 1 }}
-              transition={{ duration: 0.3 }}
-            />
+              {/* Efectos de fondo elegantes */}
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-taply-cream-blue to-taply-light-grey opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                initial={{ scale: 0 }}
+                whileHover={{ scale: 1 }}
+                transition={{ duration: 0.3 }}
+              />
 
             {/* Partículas elegantes */}
             <motion.div
@@ -239,7 +239,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.2 }}
-            className="mt-4 text-sm text-gray-400"
+            className="mt-4 text-sm text-gray-600"
           >
             Be among the first to experience Taply
           </motion.p>
@@ -253,13 +253,13 @@ export default function Hero() {
         transition={{ duration: 1, delay: 1.4 }}
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
       >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-taply-blue rounded-full flex justify-center pt-2"
-        >
-          <div className="w-1 h-2 bg-taply-blue rounded-full"></div>
-        </motion.div>
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="w-6 h-10 border-2 border-taply-dark-grey rounded-full flex justify-center pt-2"
+          >
+            <div className="w-1 h-2 bg-taply-dark-grey rounded-full"></div>
+          </motion.div>
       </motion.div>
     </section>
   )

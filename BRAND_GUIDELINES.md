@@ -10,34 +10,34 @@ Esta guía define los elementos visuales, tonos y principios de diseño de Taply
 
 | Color | Hex | RGB | Uso |
 |-------|-----|-----|-----|
-| **Azul Eléctrico** | `#007AFF` | rgb(0, 122, 255) | Botones principales, enlaces, elementos interactivos |
-| **Blanco** | `#FFFFFF` | rgb(255, 255, 255) | Texto principal, iconos sobre fondos oscuros |
-| **Gris Oscuro** | `#1C1C1E` | rgb(28, 28, 30) | Fondos de secciones, cards, elementos secundarios |
+| **Azul Eléctrico** | `#007AFF` | rgb(0, 122, 255) | Principal, acentos, elementos interactivos |
+| **Crema Azul Claro** | `#E8F4FD` | rgb(232, 244, 253) | Fondos sutiles, efectos de profundidad |
+| **Gris Claro** | `#F5F5F7` | rgb(245, 245, 247) | Fondos principales, elementos neutros |
 
 ### Colores Secundarios
 
 | Color | Hex | RGB | Uso |
 |-------|-----|-----|-----|
-| **Verde Lima** | `#A8FF60` | rgb(168, 255, 96) | Acentos, gradientes, efectos hover |
-| **Negro Carbón** | `#111111` | rgb(17, 17, 17) | Fondo principal, textos sobre colores claros |
+| **Negro** | `#000000` | rgb(0, 0, 0) | Texto principal, elementos destacados |
+| **Gris Oscuro** | `#1D1D1F` | rgb(29, 29, 31) | Texto secundario, acentos elegantes |
 
 ### Gradientes
 
 **Gradiente Principal (Texto)**
 ```css
-background: linear-gradient(to right, #007AFF, #A8FF60);
+background: linear-gradient(to right, #007AFF, #1D1D1F);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 ```
 
 **Gradiente de Fondo**
 ```css
-background: linear-gradient(to bottom right, rgba(0, 122, 255, 0.2), #111111, rgba(168, 255, 96, 0.1));
+background: linear-gradient(to bottom right, rgba(232, 244, 253, 0.3), #FFFFFF, rgba(245, 245, 247, 0.5));
 ```
 
 **Gradiente de Botones**
 ```css
-background: linear-gradient(to right, #007AFF, #A8FF60);
+background: linear-gradient(to right, #000000, #1D1D1F);
 ```
 
 ---

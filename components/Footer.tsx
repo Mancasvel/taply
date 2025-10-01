@@ -7,13 +7,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="relative bg-gradient-to-b from-taply-gray-dark to-taply-dark border-t border-gray-800/50 py-16 px-6">
-      {/* Efectos de fondo */}
-      <div className="absolute inset-0 bg-gradient-to-t from-taply-dark via-transparent to-transparent"></div>
+    <footer className="relative bg-white border-t border-gray-200 py-16 px-6">
+      {/* Efectos de fondo sutiles */}
+      <div className="absolute inset-0 bg-gradient-to-t from-taply-light-grey via-transparent to-transparent"></div>
       <motion.div
         animate={{
           scale: [1, 1.05, 1],
-          opacity: [0.3, 0.5, 0.3]
+          opacity: [0.1, 0.3, 0.1]
         }}
         transition={{
           duration: 12,
@@ -51,7 +51,7 @@ export default function Footer() {
               />
             </motion.div>
             <motion.p
-              className="text-gray-400 text-lg leading-relaxed"
+              className="text-gray-700 text-lg leading-relaxed"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -60,7 +60,7 @@ export default function Footer() {
               The card that connects with you
             </motion.p>
             <motion.p
-              className="text-gray-500 text-base leading-relaxed"
+              className="text-gray-600 text-base leading-relaxed"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -77,7 +77,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-semibold text-white mb-6 text-xl">Legal</h3>
+            <h3 className="font-semibold text-taply-black mb-6 text-xl">Legal</h3>
             <ul className="space-y-4">
               {[
                 { text: "Terms and conditions", href: "/terminos-y-condiciones" },
@@ -94,7 +94,7 @@ export default function Footer() {
                 >
                   <Link href={link.href}>
                     <motion.a
-                      className="text-gray-400 hover:text-taply-blue transition-all duration-300 text-base relative group"
+                      className="text-gray-600 hover:text-taply-blue transition-all duration-300 text-base relative group"
                       whileHover={{
                         x: 5,
                         color: "#007AFF"
@@ -119,7 +119,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-semibold text-white mb-6 text-xl">Follow us</h3>
+            <h3 className="font-semibold text-taply-black mb-6 text-xl">Follow us</h3>
             <div className="grid grid-cols-2 gap-4">
               {[
                 {
@@ -172,7 +172,7 @@ export default function Footer() {
                     transition: { duration: 0.3 }
                   }}
                   whileTap={{ scale: 0.9 }}
-                  className={`w-full h-16 bg-taply-dark border-2 border-gray-700 rounded-2xl flex items-center justify-center ${social.color} transition-all duration-300 group`}
+                  className={`w-full h-16 bg-white border-2 border-gray-300 rounded-2xl flex items-center justify-center ${social.color} transition-all duration-300 group hover:border-gray-400`}
                 >
                   <motion.div
                     animate={{
@@ -203,13 +203,13 @@ export default function Footer() {
         >
           <div className="text-center space-y-4">
             <motion.p
-              className="text-gray-400 text-lg font-medium"
+              className="text-gray-800 text-lg font-medium"
               whileHover={{ scale: 1.02 }}
             >
               © {currentYear} Taply. All rights reserved.
             </motion.p>
             <motion.p
-              className="text-gray-500 text-base leading-relaxed max-w-2xl mx-auto"
+              className="text-gray-600 text-base leading-relaxed max-w-2xl mx-auto"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
@@ -230,7 +230,7 @@ export default function Footer() {
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
-                className="w-3 h-3 bg-taply-blue rounded-full"
+                className="w-3 h-3 bg-taply-dark-grey rounded-full"
               />
               <motion.div
                 animate={{
@@ -243,7 +243,7 @@ export default function Footer() {
                   ease: "easeInOut",
                   delay: 1
                 }}
-                className="w-2 h-2 bg-taply-lime rounded-full"
+                className="w-2 h-2 bg-taply-blue rounded-full"
               />
               <motion.div
                 animate={{
@@ -256,16 +256,16 @@ export default function Footer() {
                   ease: "easeInOut",
                   delay: 2
                 }}
-                className="w-3 h-3 bg-taply-blue rounded-full"
+                className="w-3 h-3 bg-taply-dark-grey rounded-full"
               />
             </div>
           </div>
         </motion.div>
       </div>
 
-      {/* Decoración de fondo */}
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-taply-blue/5 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-0 right-0 w-64 h-64 bg-taply-lime/5 rounded-full blur-3xl pointer-events-none"></div>
+      {/* Decoración de fondo sutil */}
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-taply-cream-blue/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-64 h-64 bg-taply-light-grey/10 rounded-full blur-3xl pointer-events-none"></div>
     </footer>
   )
 }

@@ -32,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${montserrat.variable} ${inter.variable}`}>
-      <body className="bg-taply-dark text-taply-white antialiased">
+      <body className="bg-white text-taply-black antialiased">
         {children}
       </body>
     </html>

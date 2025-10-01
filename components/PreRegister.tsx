@@ -60,10 +60,10 @@ export default function PreRegister() {
   }
 
   return (
-    <section id="preregister" ref={ref} className="py-24 px-6 relative overflow-hidden">
-      {/* Fondo decorativo */}
-      <div className="absolute inset-0 bg-gradient-to-b from-taply-dark via-taply-gray-dark to-taply-dark"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-taply-blue/20 rounded-full blur-3xl"></div>
+    <section id="preregister" ref={ref} className="py-24 px-6 relative overflow-hidden bg-white">
+      {/* Fondo sutil */}
+      <div className="absolute inset-0 bg-gradient-to-b from-taply-cream-blue via-white to-taply-light-grey"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-taply-blue/10 rounded-full blur-3xl"></div>
       
       <div className="container mx-auto relative z-10 max-w-4xl">
         <motion.div
@@ -72,10 +72,10 @@ export default function PreRegister() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Join the <span className="text-gradient">revolution</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-taply-black">
+            Join the <span className="bg-gradient-to-r from-taply-blue to-taply-dark-grey bg-clip-text text-transparent">revolution</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-700 text-lg max-w-2xl mx-auto">
             Register and be among the first to experience Taply
           </p>
         </motion.div>
@@ -90,7 +90,7 @@ export default function PreRegister() {
             stiffness: 100,
             damping: 15
           }}
-          className="bg-gradient-to-br from-taply-gray-dark to-taply-gray-dark/80 border border-gray-800/50 rounded-3xl p-12 md:p-16 relative overflow-hidden backdrop-blur-sm shadow-2xl"
+          className="bg-white border border-gray-200 rounded-3xl p-12 md:p-16 relative overflow-hidden shadow-2xl"
         >
           {/* Efectos de brillo elegantes */}
           <motion.div
@@ -168,7 +168,7 @@ export default function PreRegister() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-8 py-5 bg-gradient-to-r from-taply-dark to-taply-dark/80 border border-gray-700/60 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-taply-blue focus:ring-2 focus:ring-taply-blue/30 transition-all duration-500 hover:border-gray-600 focus:bg-taply-dark"
+                className="w-full px-8 py-5 bg-taply-light-grey border border-gray-300 rounded-2xl text-taply-black placeholder-gray-500 focus:outline-none focus:border-taply-blue focus:ring-2 focus:ring-taply-blue/30 transition-all duration-500 hover:border-gray-400 focus:bg-white"
                 placeholder="John Smith"
                 whileFocus={{
                   scale: 1.02,
@@ -199,7 +199,7 @@ export default function PreRegister() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-8 py-5 bg-gradient-to-r from-taply-dark to-taply-dark/80 border border-gray-700/60 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-taply-blue focus:ring-2 focus:ring-taply-blue/30 transition-all duration-500 hover:border-gray-600 focus:bg-taply-dark"
+                className="w-full px-8 py-5 bg-taply-light-grey border border-gray-300 rounded-2xl text-taply-black placeholder-gray-500 focus:outline-none focus:border-taply-blue focus:ring-2 focus:ring-taply-blue/30 transition-all duration-500 hover:border-gray-400 focus:bg-white"
                 placeholder="john@example.com"
                 whileFocus={{
                   scale: 1.02,
@@ -229,7 +229,7 @@ export default function PreRegister() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-8 py-5 bg-gradient-to-r from-taply-dark to-taply-dark/80 border border-gray-700/60 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-taply-blue focus:ring-2 focus:ring-taply-blue/30 transition-all duration-500 hover:border-gray-600 focus:bg-taply-dark"
+                className="w-full px-8 py-5 bg-taply-light-grey border border-gray-300 rounded-2xl text-taply-black placeholder-gray-500 focus:outline-none focus:border-taply-blue focus:ring-2 focus:ring-taply-blue/30 transition-all duration-500 hover:border-gray-400 focus:bg-white"
                 placeholder="+1 555 123 456"
                 whileFocus={{
                   scale: 1.02,
@@ -258,7 +258,7 @@ export default function PreRegister() {
             <motion.button
               type="submit"
               disabled={status === 'loading'}
-              className="group relative w-full px-10 py-6 bg-gradient-to-r from-taply-blue to-blue-600 text-white text-xl font-bold rounded-2xl overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-taply-blue/50 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 focus:outline-none focus:ring-4 focus:ring-taply-blue/30"
+              className="group relative w-full px-10 py-6 bg-taply-black text-white text-xl font-bold rounded-2xl overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-taply-dark-grey/50 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 focus:outline-none focus:ring-4 focus:ring-taply-blue/30"
               whileHover={{
                 scale: status === 'loading' ? 1 : 1.05,
                 boxShadow: status === 'loading' ? "none" : "0 20px 40px rgba(0, 122, 255, 0.4)"
@@ -300,7 +300,7 @@ export default function PreRegister() {
 
               {/* Efectos de fondo mejorados */}
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-taply-lime to-taply-blue opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                className="absolute inset-0 bg-gradient-to-r from-taply-cream-blue to-taply-light-grey opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 initial={{ scale: 0 }}
                 whileHover={{ scale: 1 }}
                 transition={{ duration: 0.3 }}
@@ -367,7 +367,7 @@ export default function PreRegister() {
               }}
               className="group relative"
             >
-              <div className="relative p-8 bg-gradient-to-br from-taply-gray-dark/60 to-taply-gray-dark/30 rounded-3xl border border-gray-800/40 hover:border-taply-blue/40 transition-all duration-500 backdrop-blur-sm">
+              <div className="relative p-8 bg-white rounded-3xl border border-gray-200 hover:border-taply-blue/40 transition-all duration-500 shadow-lg hover:shadow-xl">
                 {/* Gradiente de fondo en hover */}
                 <motion.div
                   className={`absolute inset-0 bg-gradient-to-br ${stat.color} opacity-0 group-hover:opacity-10 rounded-3xl transition-opacity duration-500`}
@@ -389,7 +389,7 @@ export default function PreRegister() {
                   >
                     {stat.number}
                   </motion.div>
-                  <div className="text-gray-400 text-lg group-hover:text-gray-300 transition-colors duration-300">
+                  <div className="text-gray-600 text-lg group-hover:text-gray-800 transition-colors duration-300">
                     {stat.label}
                   </div>
                 </div>
@@ -410,7 +410,7 @@ export default function PreRegister() {
                 />
 
                 {/* Indicador elegante */}
-                <div className={`absolute top-3 right-3 w-5 h-5 bg-gradient-to-br ${stat.color} rounded-full flex items-center justify-center text-xs font-bold text-white`}>
+                <div className={`absolute top-3 right-3 w-5 h-5 bg-taply-dark-grey rounded-full flex items-center justify-center text-xs font-bold text-white`}>
                   {index + 1}
                 </div>
               </div>

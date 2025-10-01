@@ -14,6 +14,10 @@ const config: Config = {
         'taply-dark': '#111111',
         'taply-gray-dark': '#1C1C1E',
         'taply-white': '#FFFFFF',
+        'taply-cream-blue': '#E8F4FD',
+        'taply-light-grey': '#F5F5F7',
+        'taply-black': '#000000',
+        'taply-dark-grey': '#1D1D1F',
       },
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],

@@ -52,9 +52,9 @@ export default function HowItWorks() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section ref={ref} className="py-24 px-6 relative overflow-hidden bg-gradient-to-b from-taply-dark via-taply-gray-dark to-taply-dark">
-      {/* Efectos de fondo */}
-      <div className="absolute right-0 top-1/4 w-96 h-96 bg-taply-lime/10 rounded-full blur-3xl"></div>
+    <section ref={ref} className="py-24 px-6 relative overflow-hidden bg-taply-light-grey">
+      {/* Efectos de fondo sutiles */}
+      <div className="absolute right-0 top-1/4 w-96 h-96 bg-taply-cream-blue/30 rounded-full blur-3xl"></div>
       
       <div className="container mx-auto relative z-10">
         <motion.div
@@ -63,10 +63,10 @@ export default function HowItWorks() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            How <span className="text-gradient">it works</span>?
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-taply-black">
+            How <span className="bg-gradient-to-r from-taply-blue to-taply-dark-grey bg-clip-text text-transparent">it works</span>?
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-700 text-lg max-w-2xl mx-auto">
             In just 4 steps you&apos;ll be ready to start connecting in a completely new way
           </p>
         </motion.div>
@@ -91,19 +91,19 @@ export default function HowItWorks() {
                 className="relative"
               >
                 <div className="relative group">
-                  {/* Número de paso elegante */}
-                  <div className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-taply-blue/40 to-taply-lime/40 absolute -top-8 -left-4 pointer-events-none select-none">
-                    {step.number}
-                  </div>
-
                   {/* Card del paso mejorada */}
                   <motion.div
-                    className="relative bg-gradient-to-br from-taply-gray-dark to-taply-gray-dark/80 border border-gray-800/60 rounded-3xl p-10 hover:border-taply-blue/60 transition-all duration-500 group-hover:transform group-hover:scale-105 backdrop-blur-sm"
+                    className="relative bg-white border border-gray-200 rounded-3xl pt-16 pb-10 px-10 hover:border-taply-blue/60 transition-all duration-500 group-hover:transform group-hover:scale-105 shadow-lg hover:shadow-xl"
                     whileHover={{
                       y: -8,
                       transition: { duration: 0.3, type: "spring", stiffness: 300, damping: 20 }
                     }}
                   >
+                    {/* Número del paso visible */}
+                    <div className="absolute -top-4 -left-4 w-12 h-12 bg-taply-black text-white rounded-full flex items-center justify-center text-lg font-bold shadow-lg z-20">
+                      {step.number}
+                    </div>
+
                     {/* Icono mejorado */}
                     <motion.div
                       className="relative z-10 mb-8"
@@ -113,18 +113,18 @@ export default function HowItWorks() {
                         transition: { duration: 0.6 }
                       }}
                     >
-                      <div className="inline-flex p-6 bg-gradient-to-br from-taply-blue to-taply-lime rounded-2xl text-white relative overflow-hidden shadow-lg">
-                        {/* Fondo animado */}
+                      <div className="inline-flex p-6 bg-taply-black rounded-2xl text-white relative overflow-hidden shadow-lg">
+                        {/* Fondo elegante animado */}
                         <motion.div
                           animate={{
                             background: [
-                              "linear-gradient(45deg, #007AFF, #A8FF60)",
-                              "linear-gradient(45deg, #A8FF60, #007AFF)",
-                              "linear-gradient(45deg, #007AFF, #A8FF60)"
+                              "linear-gradient(45deg, #000000, #1a1a1a)",
+                              "linear-gradient(45deg, #1a1a1a, #000000)",
+                              "linear-gradient(45deg, #000000, #1a1a1a)"
                             ]
                           }}
                           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                          className="absolute inset-0 opacity-30"
+                          className="absolute inset-0 opacity-20"
                         />
 
                         <div className="relative z-10">
@@ -149,16 +149,16 @@ export default function HowItWorks() {
                       </div>
                     </motion.div>
 
-                    {/* Título mejorado */}
+                    {/* Título elegante */}
                     <motion.h3
-                      className="text-2xl font-bold mb-5 relative z-10 group-hover:text-white transition-colors duration-300"
+                      className="text-2xl font-bold mb-5 relative z-10 group-hover:text-taply-dark-grey transition-colors duration-300 text-taply-black"
                       whileHover={{ scale: 1.02 }}
                     >
                       {step.title}
                     </motion.h3>
 
-                    {/* Descripción mejorada */}
-                    <p className="text-gray-400 relative z-10 leading-relaxed text-lg">
+                    {/* Descripción elegante */}
+                    <p className="text-gray-600 relative z-10 leading-relaxed text-lg">
                       {step.description}
                     </p>
 

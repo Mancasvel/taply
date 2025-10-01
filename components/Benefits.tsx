@@ -62,9 +62,9 @@ export default function Benefits() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section ref={ref} className="py-24 px-6 relative overflow-hidden">
-      {/* Fondo decorativo */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-taply-blue/10 rounded-full blur-3xl"></div>
+    <section ref={ref} className="py-24 px-6 relative overflow-hidden bg-taply-cream-blue">
+      {/* Fondo decorativo sutil */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-taply-blue/5 rounded-full blur-3xl"></div>
       
       <div className="container mx-auto relative z-10">
         <motion.div
@@ -73,10 +73,10 @@ export default function Benefits() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Why choose <span className="text-gradient">Taply</span>?
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-taply-black">
+            Why choose <span className="bg-gradient-to-r from-taply-blue to-taply-dark-grey bg-clip-text text-transparent">Taply</span>?
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-700 text-lg max-w-2xl mx-auto">
             Discover the advantages that make Taply the best choice for connecting
           </p>
         </motion.div>
@@ -101,7 +101,7 @@ export default function Benefits() {
               }}
               className="group relative"
             >
-              <div className="relative p-10 bg-gradient-to-br from-taply-gray-dark to-taply-gray-dark/50 rounded-3xl border border-gray-800/50 hover:border-taply-blue/50 transition-all duration-500 h-full backdrop-blur-sm">
+              <div className="relative p-10 bg-white rounded-3xl border border-gray-200 hover:border-taply-blue/50 transition-all duration-500 h-full shadow-lg hover:shadow-xl">
                 {/* Gradiente de fondo en hover mejorado */}
                 <motion.div
                   className={`absolute inset-0 bg-gradient-to-br ${benefit.color} opacity-0 group-hover:opacity-15 rounded-3xl transition-opacity duration-500`}
@@ -113,24 +113,24 @@ export default function Benefits() {
                 {/* Contenido */}
                 <div className="relative z-10">
                   <motion.div
-                    className={`inline-flex p-5 bg-gradient-to-br ${benefit.color} rounded-2xl mb-8 text-white relative overflow-hidden`}
+                    className={`inline-flex p-5 bg-taply-black rounded-2xl mb-8 text-white relative overflow-hidden shadow-lg`}
                     whileHover={{
                       scale: 1.1,
                       rotate: [0, -5, 5, 0],
                       transition: { duration: 0.6 }
                     }}
                   >
-                    {/* Fondo animado del ícono */}
+                    {/* Fondo elegante del ícono */}
                     <motion.div
                       animate={{
                         background: [
-                          `linear-gradient(45deg, ${benefit.color.includes('lime') ? '#A8FF60, #7CE54A' : '#007AFF, #0056CC'})`,
-                          `linear-gradient(45deg, ${benefit.color.includes('lime') ? '#7CE54A, #A8FF60' : '#0056CC, #007AFF'})`,
-                          `linear-gradient(45deg, ${benefit.color.includes('lime') ? '#A8FF60, #7CE54A' : '#007AFF, #0056CC'})`
+                          `linear-gradient(45deg, #000000, #1a1a1a)`,
+                          `linear-gradient(45deg, #1a1a1a, #000000)`,
+                          `linear-gradient(45deg, #000000, #1a1a1a)`
                         ]
                       }}
                       transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                      className="absolute inset-0 rounded-2xl opacity-50"
+                      className="absolute inset-0 rounded-2xl opacity-20"
                     />
 
                     <div className="relative z-10">
@@ -154,13 +154,13 @@ export default function Benefits() {
                   </motion.div>
 
                   <motion.h3
-                    className="text-2xl font-bold mb-5 group-hover:text-white transition-colors duration-300"
+                    className="text-2xl font-bold mb-5 group-hover:text-taply-dark-grey transition-colors duration-300 text-taply-black"
                     whileHover={{ scale: 1.02 }}
                   >
                     {benefit.title}
                   </motion.h3>
 
-                  <p className="text-gray-400 leading-relaxed text-lg">
+                  <p className="text-gray-600 leading-relaxed text-lg">
                     {benefit.description}
                   </p>
                 </div>
@@ -185,8 +185,8 @@ export default function Benefits() {
                   <div className="absolute top-0 left-1/2 w-1/2 h-1/2 bg-gradient-to-br from-taply-blue/10 to-transparent blur-3xl transform -translate-x-1/2"></div>
                 </motion.div>
 
-                {/* Indicador sutil de número */}
-                <div className="absolute top-4 right-4 w-6 h-6 bg-gradient-to-br from-taply-blue/30 to-taply-lime/30 rounded-full flex items-center justify-center text-xs font-bold text-white/70">
+                {/* Indicador elegante de número */}
+                <div className="absolute top-4 right-4 w-6 h-6 bg-taply-dark-grey rounded-full flex items-center justify-center text-xs font-bold text-white">
                   {index + 1}
                 </div>
               </div>
